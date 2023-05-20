@@ -1,9 +1,9 @@
 {
-  "name": "even positive integer generator",
+  "name": "increment|140",
   "neurons": [
     {
       "id": 1,
-      "label": "1",
+      "label": "L_{i}",
       "position": {
         "x": 0,
         "y": 0
@@ -22,11 +22,23 @@
           "delay": 0
         }
       ],
-      "spikes": 2,
+      "spikes": 0,
       "downtime": 0,
       "synapses": [
         {
-          "to": 4,
+          "to": 11,
+          "weight": 1
+        },
+        {
+          "to": 12,
+          "weight": 1
+        },
+        {
+          "to": 13,
+          "weight": 1
+        },
+        {
+          "to": 14,
           "weight": 1
         }
       ],
@@ -36,31 +48,25 @@
       "outputLog": []
     },
     {
-      "id": 2,
-      "label": "2",
+      "id": 11,
+      "label": "L_{i,1}",
       "position": {
         "x": 0,
         "y": 0
       },
       "rules": [
         {
-          "regex": "a^{2}",
-          "consumed": 2,
-          "produced": 1,
-          "delay": 0
-        },
-        {
           "regex": "a",
           "consumed": 1,
-          "produced": 0,
-          "delay": 0
+          "produced": 1,
+          "delay": 1
         }
       ],
-      "spikes": 2,
+      "spikes": 0,
       "downtime": 0,
       "synapses": [
         {
-          "to": 5,
+          "to": 2,
           "weight": 1
         }
       ],
@@ -70,42 +76,8 @@
       "outputLog": []
     },
     {
-      "id": 3,
-      "label": "3",
-      "position": {
-        "x": 0,
-        "y": 0
-      },
-      "rules": [
-        {
-          "regex": "a^{2}",
-          "consumed": 2,
-          "produced": 1,
-          "delay": 0
-        },
-        {
-          "regex": "a",
-          "consumed": 1,
-          "produced": 0,
-          "delay": 0
-        }
-      ],
-      "spikes": 2,
-      "downtime": 0,
-      "synapses": [
-        {
-          "to": 6,
-          "weight": 1
-        }
-      ],
-      "isInput": false,
-      "inputLog": [],
-      "isOutput": false,
-      "outputLog": []
-    },
-    {
-      "id": 4,
-      "label": "4",
+      "id": 12,
+      "label": "L_{i,2}",
       "position": {
         "x": 0,
         "y": 0
@@ -128,20 +100,12 @@
       "downtime": 0,
       "synapses": [
         {
-          "to": 1,
-          "weight": 1
-        },
-        {
           "to": 2,
           "weight": 1
         },
         {
           "to": 3,
           "weight": 1
-        },
-        {
-          "to": 7,
-          "weight": 1
         }
       ],
       "isInput": false,
@@ -150,44 +114,8 @@
       "outputLog": []
     },
     {
-      "id": 5,
-      "label": "5",
-      "position": {
-        "x": 0,
-        "y": 0
-      },
-      "rules": [
-        {
-          "regex": "a",
-          "consumed": 1,
-          "produced": 1,
-          "delay": 0
-        }
-      ],
-      "spikes": 0,
-      "downtime": 0,
-      "synapses": [
-        {
-          "to": 1,
-          "weight": 1
-        },
-        {
-          "to": 2,
-          "weight": 1
-        },
-        {
-          "to": 7,
-          "weight": 1
-        }
-      ],
-      "isInput": false,
-      "inputLog": [],
-      "isOutput": false,
-      "outputLog": []
-    },
-    {
-      "id": 6,
-      "label": "6",
+      "id": 13,
+      "label": "L_{i,3}",
       "position": {
         "x": 0,
         "y": 0
@@ -208,7 +136,7 @@
           "weight": 1
         },
         {
-          "to": 7,
+          "to": 4,
           "weight": 1
         }
       ],
@@ -218,8 +146,36 @@
       "outputLog": []
     },
     {
-      "id": 7,
-      "label": "7",
+      "id": 14,
+      "label": "L_{i,4}",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "rules": [
+        {
+          "regex": "a",
+          "consumed": 1,
+          "produced": 1,
+          "delay": 0
+        }
+      ],
+      "spikes": 0,
+      "downtime": 0,
+      "synapses": [
+        {
+          "to": 4,
+          "weight": 1
+        }
+      ],
+      "isInput": false,
+      "inputLog": [],
+      "isOutput": false,
+      "outputLog": []
+    },
+    {
+      "id": 2,
+      "label": "L_{j}",
       "position": {
         "x": 0,
         "y": 0
@@ -232,24 +188,77 @@
           "delay": 0
         },
         {
-          "regex": "a^{3}",
-          "consumed": 3,
+          "regex": "a",
+          "consumed": 1,
           "produced": 0,
           "delay": 0
         }
       ],
-      "spikes": 3,
+      "spikes": 2,
       "downtime": 0,
       "synapses": [],
       "isInput": false,
       "inputLog": [],
-      "isOutput": true,
-      "outputLog": [
+      "isOutput": false,
+      "outputLog": []
+    },
+    {
+      "id": 3,
+      "label": "L_{k}",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "rules": [
         {
-          "time": 0,
-          "spikes": 1
+          "regex": "a^{2}",
+          "consumed": 2,
+          "produced": 1,
+          "delay": 0
+        },
+        {
+          "regex": "a",
+          "consumed": 1,
+          "produced": 0,
+          "delay": 0
         }
-      ]
+      ],
+      "spikes": 1,
+      "downtime": 0,
+      "synapses": [],
+      "isInput": false,
+      "inputLog": [],
+      "isOutput": false,
+      "outputLog": []
+    },
+    {
+      "id": 4,
+      "label": "r",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "rules": [
+        {
+          "regex": "a(aa)^{+}",
+          "consumed": 3,
+          "produced": 1,
+          "delay": 0
+        },
+        {
+          "regex": "a",
+          "consumed": 1,
+          "produced": 1,
+          "delay": 1
+        }
+      ],
+      "spikes": 282,
+      "downtime": 0,
+      "synapses": [],
+      "isInput": false,
+      "inputLog": [],
+      "isOutput": false,
+      "outputLog": []
     }
   ]
 }
