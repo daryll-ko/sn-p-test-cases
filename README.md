@@ -4,7 +4,7 @@ Hello! This repo holds all test cases for evaluating Spiking Neural P (SN P) sys
 
 ## Downloading test cases
 
-You can download all existing test cases by visiting the `Releases` section and downloading the `{date}-sn-p-test-cases.zip` archive attached to the latest release.
+You can download all existing test cases by visiting the `Releases` section and downloading the `{release}-sn-p-test-cases.zip` archive attached to the latest release.
 
 <img src="assets/downloading_test_cases_sample.png" />
 
