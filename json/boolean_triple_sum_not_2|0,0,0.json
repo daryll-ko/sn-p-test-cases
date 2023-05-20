@@ -1,5 +1,5 @@
 {
-	"name": "boolean triple sum not 2",
+	"name": "boolean triple sum not 2|0,0,0",
 	"neurons": [
 		{
 			"id": 1,
@@ -25,12 +25,7 @@
 				}
 			],
 			"isInput": true,
-			"inputLog": [
-				{
-					"time": 0,
-					"spikes": 1
-				}
-			],
+			"inputLog": [],
 			"isOutput": false,
 			"outputLog": []
 		},
@@ -90,12 +85,7 @@
 				}
 			],
 			"isInput": true,
-			"inputLog": [
-				{
-					"time": 0,
-					"spikes": 1
-				}
-			],
+			"inputLog": [],
 			"isOutput": false,
 			"outputLog": []
 		},
@@ -191,12 +181,7 @@
 				}
 			],
 			"isInput": true,
-			"inputLog": [
-				{
-					"time": 0,
-					"spikes": 1
-				}
-			],
+			"inputLog": [],
 			"isOutput": false,
 			"outputLog": []
 		},
