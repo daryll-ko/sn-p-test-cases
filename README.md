@@ -8,7 +8,7 @@ You can download all existing test cases by clicking the green `<> Code` button 
 
 <img src="assets/downloading_test_cases.png" />
 
-## Test case masterlist
+## Test case list
 
 | Name                              | Type       | Function                                            | Source                                                                          |
 |-----------------------------------|------------|-----------------------------------------------------|---------------------------------------------------------------------------------|
