@@ -22,7 +22,7 @@
           "delay": 0
         }
       ],
-      "spikes": 2,
+      "spikes": 1,
       "downtime": 0,
       "synapses": [
         {
@@ -60,7 +60,7 @@
           "delay": 1
         }
       ],
-      "spikes": 1,
+      "spikes": 0,
       "downtime": 0,
       "synapses": [
         {
@@ -104,8 +104,8 @@
           "delay": 0
         }
       ],
-      "spikes": 2,
-      "downtime": 0,
+      "spikes": 0,
+      "downtime": 1,
       "synapses": [],
       "isInput": false,
       "inputLog": [],
@@ -113,6 +113,10 @@
       "outputLog": [
         {
           "time": 0,
+          "spikes": 1
+        },
+        {
+          "time": 3,
           "spikes": 1
         }
       ]
