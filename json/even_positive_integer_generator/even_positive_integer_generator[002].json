@@ -90,7 +90,7 @@
       "content": 3
     },
     {
-      "id": "env_out",
+      "id": "env_{out}",
       "type": "output",
       "position": {
         "x": 0,
@@ -166,7 +166,7 @@
     },
     {
       "from": "7",
-      "to": "env_out",
+      "to": "env_{out}",
       "weight": 1
     }
   ]

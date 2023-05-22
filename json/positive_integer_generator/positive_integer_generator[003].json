@@ -41,7 +41,7 @@
       "content": 0
     },
     {
-      "id": "env_out",
+      "id": "env_{out}",
       "type": "output",
       "position": {
         "x": 0,
@@ -78,7 +78,7 @@
     },
     {
       "from": "3",
-      "to": "env_out",
+      "to": "env_{out}",
       "weight": 1
     }
   ]
