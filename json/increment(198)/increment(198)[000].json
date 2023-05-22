@@ -8,7 +8,8 @@
         "y": 0
       },
       "rules": [
-        "a^{2}\\to a;0"
+        "a^{2}\\to a;0",
+        "a\\to \\lambda;0"
       ],
       "content": 2
     },
