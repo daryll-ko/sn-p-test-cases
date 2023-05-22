@@ -11,7 +11,7 @@
         "a^{2}\\to a;0",
         "a\\to \\lambda;0"
       ],
-      "content": 2
+      "content": 1
     },
     {
       "id": "2",
@@ -24,7 +24,7 @@
         "a^{2}\\to a;0",
         "a\\to \\lambda;0"
       ],
-      "content": 2
+      "content": 1
     },
     {
       "id": "3",
@@ -37,7 +37,7 @@
         "a^{2}\\to a;0",
         "a\\to \\lambda;0"
       ],
-      "content": 2
+      "content": 1
     },
     {
       "id": "4",
@@ -97,7 +97,12 @@
         "y": 0
       },
       "rules": [],
-      "content": []
+      "content": [
+        1,
+        0,
+        0,
+        0
+      ]
     }
   ],
   "synapses": [

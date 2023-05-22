@@ -87,7 +87,7 @@
         "a^{2}\\to a;0",
         "a^{3}\\to \\lambda;0"
       ],
-      "content": 2
+      "content": 3
     },
     {
       "id": "env_out",
@@ -97,7 +97,10 @@
         "y": 0
       },
       "rules": [],
-      "content": []
+      "content": [
+        1,
+        0
+      ]
     }
   ],
   "synapses": [
