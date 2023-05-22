@@ -1,264 +1,156 @@
 {
-  "name": "increment(020)",
   "neurons": [
     {
-      "id": 1,
-      "label": "L_{i}",
+      "id": "L_{i}",
+      "type": "regular",
       "position": {
         "x": 0,
         "y": 0
       },
       "rules": [
-        {
-          "regex": "a^{2}",
-          "consumed": 2,
-          "produced": 1,
-          "delay": 0
-        },
-        {
-          "regex": "a",
-          "consumed": 1,
-          "produced": 0,
-          "delay": 0
-        }
+        "a^{2}\\to a;0"
       ],
-      "spikes": 0,
-      "downtime": 0,
-      "synapses": [
-        {
-          "to": 11,
-          "weight": 1
-        },
-        {
-          "to": 12,
-          "weight": 1
-        },
-        {
-          "to": 13,
-          "weight": 1
-        },
-        {
-          "to": 14,
-          "weight": 1
-        }
-      ],
-      "isInput": false,
-      "inputLog": [],
-      "isOutput": false,
-      "outputLog": []
+      "content": 0
     },
     {
-      "id": 11,
-      "label": "L_{i,1}",
+      "id": "L_{i,1}",
+      "type": "regular",
       "position": {
         "x": 0,
         "y": 0
       },
       "rules": [
-        {
-          "regex": "a",
-          "consumed": 1,
-          "produced": 1,
-          "delay": 1
-        }
+        "a\\to a;1"
       ],
-      "spikes": 0,
-      "downtime": 1,
-      "synapses": [
-        {
-          "to": 2,
-          "weight": 1
-        }
-      ],
-      "isInput": false,
-      "inputLog": [],
-      "isOutput": false,
-      "outputLog": []
+      "content": 0
     },
     {
-      "id": 12,
-      "label": "L_{i,2}",
+      "id": "L_{i,2}",
+      "type": "regular",
       "position": {
         "x": 0,
         "y": 0
       },
       "rules": [
-        {
-          "regex": "a",
-          "consumed": 1,
-          "produced": 1,
-          "delay": 0
-        },
-        {
-          "regex": "a",
-          "consumed": 1,
-          "produced": 1,
-          "delay": 1
-        }
+        "a\\to a;0",
+        "a\\to a;1"
       ],
-      "spikes": 0,
-      "downtime": 0,
-      "synapses": [
-        {
-          "to": 2,
-          "weight": 1
-        },
-        {
-          "to": 3,
-          "weight": 1
-        }
-      ],
-      "isInput": false,
-      "inputLog": [],
-      "isOutput": false,
-      "outputLog": []
+      "content": 0
     },
     {
-      "id": 13,
-      "label": "L_{i,3}",
+      "id": "L_{i,3}",
+      "type": "regular",
       "position": {
         "x": 0,
         "y": 0
       },
       "rules": [
-        {
-          "regex": "a",
-          "consumed": 1,
-          "produced": 1,
-          "delay": 0
-        }
+        "a\\to a;0"
       ],
-      "spikes": 0,
-      "downtime": 0,
-      "synapses": [
-        {
-          "to": 3,
-          "weight": 1
-        },
-        {
-          "to": 4,
-          "weight": 1
-        }
-      ],
-      "isInput": false,
-      "inputLog": [],
-      "isOutput": false,
-      "outputLog": []
+      "content": 0
     },
     {
-      "id": 14,
-      "label": "L_{i,4}",
+      "id": "L_{i,4}",
+      "type": "regular",
       "position": {
         "x": 0,
         "y": 0
       },
       "rules": [
-        {
-          "regex": "a",
-          "consumed": 1,
-          "produced": 1,
-          "delay": 0
-        }
+        "a\\to a;0"
       ],
-      "spikes": 0,
-      "downtime": 0,
-      "synapses": [
-        {
-          "to": 4,
-          "weight": 1
-        }
-      ],
-      "isInput": false,
-      "inputLog": [],
-      "isOutput": false,
-      "outputLog": []
+      "content": 0
     },
     {
-      "id": 2,
-      "label": "L_{j}",
+      "id": "L_{j}",
+      "type": "regular",
       "position": {
         "x": 0,
         "y": 0
       },
       "rules": [
-        {
-          "regex": "a^{2}",
-          "consumed": 2,
-          "produced": 1,
-          "delay": 0
-        },
-        {
-          "regex": "a",
-          "consumed": 1,
-          "produced": 0,
-          "delay": 0
-        }
+        "a^{2}\\to a;0",
+        "a\\to \\lambda;0"
       ],
-      "spikes": 1,
-      "downtime": 0,
-      "synapses": [],
-      "isInput": false,
-      "inputLog": [],
-      "isOutput": false,
-      "outputLog": []
+      "content": 0
     },
     {
-      "id": 3,
-      "label": "L_{k}",
+      "id": "L_{k}",
+      "type": "regular",
       "position": {
         "x": 0,
         "y": 0
       },
       "rules": [
-        {
-          "regex": "a^{2}",
-          "consumed": 2,
-          "produced": 1,
-          "delay": 0
-        },
-        {
-          "regex": "a",
-          "consumed": 1,
-          "produced": 0,
-          "delay": 0
-        }
+        "a^{2}\\to a;0",
+        "a\\to \\lambda;0"
       ],
-      "spikes": 2,
-      "downtime": 0,
-      "synapses": [],
-      "isInput": false,
-      "inputLog": [],
-      "isOutput": false,
-      "outputLog": []
+      "content": 1
     },
     {
-      "id": 4,
-      "label": "r",
+      "id": "r",
+      "type": "regular",
       "position": {
         "x": 0,
         "y": 0
       },
       "rules": [
-        {
-          "regex": "a(aa)^{+}",
-          "consumed": 3,
-          "produced": 1,
-          "delay": 0
-        },
-        {
-          "regex": "a",
-          "consumed": 1,
-          "produced": 1,
-          "delay": 1
-        }
+        "a(aa)^{+}/a^{3}\\to a;0",
+        "a\\to a;1"
       ],
-      "spikes": 42,
-      "downtime": 0,
-      "synapses": [],
-      "isInput": false,
-      "inputLog": [],
-      "isOutput": false,
-      "outputLog": []
+      "content": 42
+    }
+  ],
+  "synapses": [
+    {
+      "from": "L_{i}",
+      "to": "L_{i,1}",
+      "weight": 1
+    },
+    {
+      "from": "L_{i}",
+      "to": "L_{i,2}",
+      "weight": 1
+    },
+    {
+      "from": "L_{i}",
+      "to": "L_{i,3}",
+      "weight": 1
+    },
+    {
+      "from": "L_{i}",
+      "to": "L_{i,4}",
+      "weight": 1
+    },
+    {
+      "from": "L_{i,1}",
+      "to": "L_{j}",
+      "weight": 1
+    },
+    {
+      "from": "L_{i,2}",
+      "to": "L_{j}",
+      "weight": 1
+    },
+    {
+      "from": "L_{i,2}",
+      "to": "L_{k}",
+      "weight": 1
+    },
+    {
+      "from": "L_{i,3}",
+      "to": "L_{k}",
+      "weight": 1
+    },
+    {
+      "from": "L_{i,3}",
+      "to": "r",
+      "weight": 1
+    },
+    {
+      "from": "L_{i,4}",
+      "to": "r",
+      "weight": 1
     }
   ]
 }
