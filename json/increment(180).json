@@ -1,5 +1,5 @@
 {
-	"name": "increment|198",
+	"name": "increment(180)",
 	"neurons": [
 		{
 			"id": 1,
@@ -252,7 +252,7 @@
 					"delay": 1
 				}
 			],
-			"spikes": 396,
+			"spikes": 360,
 			"downtime": 0,
 			"synapses": [],
 			"isInput": false,

@@ -1,5 +1,5 @@
 {
-	"name": "increment|150",
+	"name": "increment(150)",
 	"neurons": [
 		{
 			"id": 1,

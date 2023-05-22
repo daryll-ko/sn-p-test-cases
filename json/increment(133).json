@@ -1,5 +1,5 @@
 {
-	"name": "increment|020",
+	"name": "increment(133)",
 	"neurons": [
 		{
 			"id": 1,
@@ -252,7 +252,7 @@
 					"delay": 1
 				}
 			],
-			"spikes": 40,
+			"spikes": 266,
 			"downtime": 0,
 			"synapses": [],
 			"isInput": false,
