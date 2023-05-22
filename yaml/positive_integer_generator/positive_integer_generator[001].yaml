@@ -1,79 +1,53 @@
-name: positive integer generator
 neurons:
-- id: 1
-  label: '1'
+- id: '1'
+  type: regular
   position:
     x: 0
     y: 0
   rules:
-  - regex: a^{2}
-    consumed: 1
-    produced: 1
-    delay: 0
-  - regex: a
-    consumed: 1
-    produced: 0
-    delay: 0
-  spikes: 2
-  downtime: 0
-  synapses:
-  - to: 2
-    weight: 1
-  - to: 3
-    weight: 1
-  isInput: false
-  inputLog: []
-  isOutput: false
-  outputLog: []
-- id: 2
-  label: '2'
+  - a^{2}/a\to a;0
+  - a\to \lambda;0
+  content: 2
+- id: '2'
+  type: regular
   position:
     x: 0
     y: 0
   rules:
-  - regex: a
-    consumed: 1
-    produced: 1
-    delay: 0
-  - regex: a
-    consumed: 1
-    produced: 1
-    delay: 1
-  spikes: 1
-  downtime: 0
-  synapses:
-  - to: 1
-    weight: 1
-  - to: 3
-    weight: 1
-  isInput: false
-  inputLog: []
-  isOutput: false
-  outputLog: []
-- id: 3
-  label: '3'
+  - a\to a;0
+  - a\to a;1
+  content: 1
+- id: '3'
+  type: regular
   position:
     x: 0
     y: 0
   rules:
-  - regex: a^{3}
-    consumed: 3
-    produced: 1
-    delay: 0
-  - regex: a
-    consumed: 1
-    produced: 1
-    delay: 1
-  - regex: a^{2}
-    consumed: 2
-    produced: 0
-    delay: 0
-  spikes: 2
-  downtime: 0
-  synapses: []
-  isInput: false
-  inputLog: []
-  isOutput: true
-  outputLog:
-  - time: 0
-    spikes: 1
+  - a^{3}\to a;0
+  - a\to a;1
+  - a^{2}\to \lambda;0
+  content: 2
+- id: env_{out}
+  type: output
+  position:
+    x: 0
+    y: 0
+  rules: []
+  content:
+  - 1
+synapses:
+- from: '1'
+  to: '2'
+  weight: 1
+- from: '1'
+  to: '3'
+  weight: 1
+- from: '2'
+  to: '1'
+  weight: 1
+- from: '2'
+  to: '3'
+  weight: 1
+- from: '3'
+  to: env_{out}
+  weight: 1
