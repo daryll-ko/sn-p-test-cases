@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <content>
-    <_1>
-        <id>_1</id>
+    <n_1>
+        <id>n_1</id>
         <position>
             <x>0</x>
             <y>0</y>
@@ -9,13 +9,13 @@
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>2</spikes>
         <delay>0</delay>
-        <out>_4</out>
+        <out>n_4</out>
         <outWeights>
-            <_4>1</_4>
+            <n_4>1</n_4>
         </outWeights>
-    </_1>
-    <_2>
-        <id>_2</id>
+    </n_1>
+    <n_2>
+        <id>n_2</id>
         <position>
             <x>0</x>
             <y>0</y>
@@ -23,13 +23,13 @@
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>2</spikes>
         <delay>0</delay>
-        <out>_5</out>
+        <out>n_5</out>
         <outWeights>
-            <_5>1</_5>
+            <n_5>1</n_5>
         </outWeights>
-    </_2>
-    <_3>
-        <id>_3</id>
+    </n_2>
+    <n_3>
+        <id>n_3</id>
         <position>
             <x>0</x>
             <y>0</y>
@@ -37,13 +37,13 @@
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>2</spikes>
         <delay>0</delay>
-        <out>_6</out>
+        <out>n_6</out>
         <outWeights>
-            <_6>1</_6>
+            <n_6>1</n_6>
         </outWeights>
-    </_3>
-    <_4>
-        <id>_4</id>
+    </n_3>
+    <n_4>
+        <id>n_4</id>
         <position>
             <x>0</x>
             <y>0</y>
@@ -51,19 +51,19 @@
         <rules>a/a-&gt;a;0 a/a-&gt;a;1</rules>
         <spikes>0</spikes>
         <delay>0</delay>
-        <out>_1</out>
-        <out>_2</out>
-        <out>_3</out>
-        <out>_7</out>
+        <out>n_1</out>
+        <out>n_2</out>
+        <out>n_3</out>
+        <out>n_7</out>
         <outWeights>
-            <_1>1</_1>
-            <_2>1</_2>
-            <_3>1</_3>
-            <_7>1</_7>
+            <n_1>1</n_1>
+            <n_2>1</n_2>
+            <n_3>1</n_3>
+            <n_7>1</n_7>
         </outWeights>
-    </_4>
-    <_5>
-        <id>_5</id>
+    </n_4>
+    <n_5>
+        <id>n_5</id>
         <position>
             <x>0</x>
             <y>0</y>
@@ -71,17 +71,17 @@
         <rules>a/a-&gt;a;0</rules>
         <spikes>0</spikes>
         <delay>0</delay>
-        <out>_1</out>
-        <out>_2</out>
-        <out>_7</out>
+        <out>n_1</out>
+        <out>n_2</out>
+        <out>n_7</out>
         <outWeights>
-            <_1>1</_1>
-            <_2>1</_2>
-            <_7>1</_7>
+            <n_1>1</n_1>
+            <n_2>1</n_2>
+            <n_7>1</n_7>
         </outWeights>
-    </_5>
-    <_6>
-        <id>_6</id>
+    </n_5>
+    <n_6>
+        <id>n_6</id>
         <position>
             <x>0</x>
             <y>0</y>
@@ -89,15 +89,15 @@
         <rules>a/a-&gt;a;0</rules>
         <spikes>0</spikes>
         <delay>0</delay>
-        <out>_3</out>
-        <out>_7</out>
+        <out>n_3</out>
+        <out>n_7</out>
         <outWeights>
-            <_3>1</_3>
-            <_7>1</_7>
+            <n_3>1</n_3>
+            <n_7>1</n_7>
         </outWeights>
-    </_6>
-    <_7>
-        <id>_7</id>
+    </n_6>
+    <n_7>
+        <id>n_7</id>
         <position>
             <x>0</x>
             <y>0</y>
@@ -105,18 +105,18 @@
         <rules>2a/2a-&gt;a;0 3a/3a-&gt;0;0</rules>
         <spikes>3</spikes>
         <delay>0</delay>
-        <out>_env_out</out>
+        <out>env_out</out>
         <outWeights>
-            <_env_out>1</_env_out>
+            <env_out>1</env_out>
         </outWeights>
-    </_7>
-    <_env_out>
-        <id>_env_out</id>
+    </n_7>
+    <env_out>
+        <id>env_out</id>
         <position>
             <x>0</x>
             <y>0</y>
         </position>
         <bitstring>1,0</bitstring>
         <isOutput>true</isOutput>
-    </_env_out>
+    </env_out>
 </content>
