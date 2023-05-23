@@ -6,9 +6,9 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>0</spikes>
+        <delay>0</delay>
         <out>_4</out>
         <outWeights>
             <_4>1</_4>
@@ -20,9 +20,9 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>0</spikes>
+        <delay>0</delay>
         <out>_5</out>
         <outWeights>
             <_5>1</_5>
@@ -34,9 +34,9 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>0</spikes>
+        <delay>0</delay>
         <out>_6</out>
         <outWeights>
             <_6>1</_6>
@@ -48,9 +48,9 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <delay>0</delay>
         <rules>a/a-&gt;a;0 a/a-&gt;a;1</rules>
         <spikes>1</spikes>
+        <delay>0</delay>
         <out>_1</out>
         <out>_2</out>
         <out>_3</out>
@@ -68,9 +68,9 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <delay>0</delay>
         <rules>a/a-&gt;a;0</rules>
         <spikes>1</spikes>
+        <delay>0</delay>
         <out>_1</out>
         <out>_2</out>
         <out>_7</out>
@@ -86,9 +86,9 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <delay>0</delay>
         <rules>a/a-&gt;a;0</rules>
         <spikes>1</spikes>
+        <delay>0</delay>
         <out>_3</out>
         <out>_7</out>
         <outWeights>
@@ -102,9 +102,9 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 3a/3a-&gt;0;0</rules>
         <spikes>0</spikes>
+        <delay>0</delay>
         <out>_env_out</out>
         <outWeights>
             <_env_out>1</_env_out>
@@ -116,7 +116,6 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <delay>0</delay>
         <bitstring>1</bitstring>
         <isOutput>true</isOutput>
     </_env_out>

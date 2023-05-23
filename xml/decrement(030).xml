@@ -6,9 +6,9 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>2</spikes>
+        <delay>0</delay>
         <out>_L_i1</out>
         <out>_r</out>
         <out>_L_i2</out>
@@ -24,9 +24,9 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <delay>0</delay>
         <rules>a/a-&gt;a;0</rules>
         <spikes>0</spikes>
+        <delay>0</delay>
         <out>_L_j</out>
         <outWeights>
             <_L_j>1</_L_j>
@@ -38,9 +38,9 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <delay>0</delay>
         <rules>a/a-&gt;a;1</rules>
         <spikes>0</spikes>
+        <delay>0</delay>
         <out>_L_k</out>
         <outWeights>
             <_L_k>1</_L_k>
@@ -52,9 +52,9 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>0</spikes>
+        <delay>0</delay>
     </_L_j>
     <_L_k>
         <id>_L_k</id>
@@ -62,9 +62,9 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>0</spikes>
+        <delay>0</delay>
     </_L_k>
     <_r>
         <id>_r</id>
@@ -72,9 +72,9 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <delay>0</delay>
         <rules>a(aa)+/3a-&gt;a;0 a/a-&gt;a;1</rules>
         <spikes>60</spikes>
+        <delay>0</delay>
         <out>_L_j</out>
         <out>_L_k</out>
         <outWeights>
