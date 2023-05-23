@@ -1,115 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <content>
-    <__1>
-        <id>__1</id>
+    <_1>
+        <id>_1</id>
         <position>
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>0</spikes>
-        <out>__4</out>
+        <out>_4</out>
         <outWeights>
-            <__4>1</__4>
+            <_4>1</_4>
         </outWeights>
-    </__1>
-    <__2>
-        <id>__2</id>
+    </_1>
+    <_2>
+        <id>_2</id>
         <position>
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>0</spikes>
-        <out>__5</out>
+        <out>_5</out>
         <outWeights>
-            <__5>1</__5>
+            <_5>1</_5>
         </outWeights>
-    </__2>
-    <__3>
-        <id>__3</id>
+    </_2>
+    <_3>
+        <id>_3</id>
         <position>
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>0</spikes>
-        <out>__6</out>
+        <out>_6</out>
         <outWeights>
-            <__6>1</__6>
+            <_6>1</_6>
         </outWeights>
-    </__3>
-    <__4>
-        <id>__4</id>
+    </_3>
+    <_4>
+        <id>_4</id>
         <position>
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>a/a-&gt;a;0 a/a-&gt;a;1</rules>
         <spikes>1</spikes>
-        <out>__1</out>
-        <out>__2</out>
-        <out>__3</out>
-        <out>__7</out>
+        <out>_1</out>
+        <out>_2</out>
+        <out>_3</out>
+        <out>_7</out>
         <outWeights>
-            <__1>1</__1>
-            <__2>1</__2>
-            <__3>1</__3>
-            <__7>1</__7>
+            <_1>1</_1>
+            <_2>1</_2>
+            <_3>1</_3>
+            <_7>1</_7>
         </outWeights>
-    </__4>
-    <__5>
-        <id>__5</id>
+    </_4>
+    <_5>
+        <id>_5</id>
         <position>
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>a/a-&gt;a;0</rules>
         <spikes>1</spikes>
-        <out>__1</out>
-        <out>__2</out>
-        <out>__7</out>
+        <out>_1</out>
+        <out>_2</out>
+        <out>_7</out>
         <outWeights>
-            <__1>1</__1>
-            <__2>1</__2>
-            <__7>1</__7>
+            <_1>1</_1>
+            <_2>1</_2>
+            <_7>1</_7>
         </outWeights>
-    </__5>
-    <__6>
-        <id>__6</id>
+    </_5>
+    <_6>
+        <id>_6</id>
         <position>
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>a/a-&gt;a;0</rules>
         <spikes>1</spikes>
-        <out>__3</out>
-        <out>__7</out>
+        <out>_3</out>
+        <out>_7</out>
         <outWeights>
-            <__3>1</__3>
-            <__7>1</__7>
+            <_3>1</_3>
+            <_7>1</_7>
         </outWeights>
-    </__6>
-    <__7>
-        <id>__7</id>
+    </_6>
+    <_7>
+        <id>_7</id>
         <position>
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 3a/3a-&gt;0;0</rules>
         <spikes>0</spikes>
-        <out>__env_out</out>
+        <out>_env_out</out>
         <outWeights>
-            <__env_out>1</__env_out>
+            <_env_out>1</_env_out>
         </outWeights>
-    </__7>
-    <__env_out>
-        <id>__env_out</id>
+    </_7>
+    <_env_out>
+        <id>_env_out</id>
         <position>
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <bitstring>1</bitstring>
         <isOutput>true</isOutput>
-    </__env_out>
+    </_env_out>
 </content>

@@ -8,7 +8,7 @@
         </position>
         <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
-        <spikes>2</spikes>
+        <spikes>1</spikes>
         <out>_4</out>
         <outWeights>
             <_4>1</_4>
@@ -22,7 +22,7 @@
         </position>
         <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
-        <spikes>2</spikes>
+        <spikes>1</spikes>
         <out>_5</out>
         <outWeights>
             <_5>1</_5>
@@ -36,7 +36,7 @@
         </position>
         <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
-        <spikes>2</spikes>
+        <spikes>1</spikes>
         <out>_6</out>
         <outWeights>
             <_6>1</_6>
@@ -104,7 +104,7 @@
         </position>
         <delay>0</delay>
         <rules>2a/2a-&gt;a;0 3a/3a-&gt;0;0</rules>
-        <spikes>3</spikes>
+        <spikes>2</spikes>
         <out>_env_out</out>
         <outWeights>
             <_env_out>1</_env_out>
@@ -117,7 +117,7 @@
             <y>0</y>
         </position>
         <delay>0</delay>
-        <bitstring>1,0</bitstring>
+        <bitstring>1,0,0,0</bitstring>
         <isOutput>true</isOutput>
     </_env_out>
 </content>

@@ -6,6 +6,7 @@
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>2</spikes>
         <out>_4</out>
@@ -19,6 +20,7 @@
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>2</spikes>
         <out>_5</out>
@@ -32,6 +34,7 @@
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>2</spikes>
         <out>_6</out>
@@ -45,6 +48,7 @@
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>a/a-&gt;a;0 a/a-&gt;a;1</rules>
         <spikes>0</spikes>
         <out>_1</out>
@@ -64,6 +68,7 @@
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>a/a-&gt;a;0</rules>
         <spikes>0</spikes>
         <out>_1</out>
@@ -81,6 +86,7 @@
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>a/a-&gt;a;0</rules>
         <spikes>0</spikes>
         <out>_3</out>
@@ -96,6 +102,7 @@
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>2a/2a-&gt;a;0 3a/3a-&gt;0;0</rules>
         <spikes>2</spikes>
         <out>_env_out</out>
@@ -109,6 +116,7 @@
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <bitstring></bitstring>
         <isOutput>true</isOutput>
     </_env_out>

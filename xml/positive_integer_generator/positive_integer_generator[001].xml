@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <content>
-    <__1>
-        <id>__1</id>
+    <_1>
+        <id>_1</id>
         <position>
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>2a/a-&gt;a;0 a/a-&gt;0;0</rules>
         <spikes>2</spikes>
-        <out>__2</out>
-        <out>__3</out>
+        <out>_2</out>
+        <out>_3</out>
         <outWeights>
-            <__2>1</__2>
-            <__3>1</__3>
+            <_2>1</_2>
+            <_3>1</_3>
         </outWeights>
-    </__1>
-    <__2>
-        <id>__2</id>
+    </_1>
+    <_2>
+        <id>_2</id>
         <position>
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>a/a-&gt;a;0 a/a-&gt;a;1</rules>
         <spikes>1</spikes>
-        <out>__1</out>
-        <out>__3</out>
+        <out>_1</out>
+        <out>_3</out>
         <outWeights>
-            <__1>1</__1>
-            <__3>1</__3>
+            <_1>1</_1>
+            <_3>1</_3>
         </outWeights>
-    </__2>
-    <__3>
-        <id>__3</id>
+    </_2>
+    <_3>
+        <id>_3</id>
         <position>
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <rules>3a/3a-&gt;a;0 a/a-&gt;a;1 2a/2a-&gt;0;0</rules>
         <spikes>2</spikes>
-        <out>__env_out</out>
+        <out>_env_out</out>
         <outWeights>
-            <__env_out>1</__env_out>
+            <_env_out>1</_env_out>
         </outWeights>
-    </__3>
-    <__env_out>
-        <id>__env_out</id>
+    </_3>
+    <_env_out>
+        <id>_env_out</id>
         <position>
             <x>0</x>
             <y>0</y>
         </position>
+        <delay>0</delay>
         <bitstring>1</bitstring>
         <isOutput>true</isOutput>
-    </__env_out>
+    </_env_out>
 </content>
