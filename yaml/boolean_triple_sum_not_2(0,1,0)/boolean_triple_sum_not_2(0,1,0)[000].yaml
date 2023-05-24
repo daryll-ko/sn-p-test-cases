@@ -4,139 +4,137 @@ neurons:
   position:
     x: 0
     y: 0
-  rules: []
   content: 0,0,0,0,0,0,0,0,0,0
 - id: env_{in_{2}}
   type: input
   position:
     x: 0
     y: 0
-  rules: []
   content: 1,1,1,1,1,1,1,1,1,1
 - id: env_{in_{3}}
   type: input
   position:
     x: 0
     y: 0
-  rules: []
   content: 0,0,0,0,0,0,0,0,0,0
 - id: in_{1}
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a\to a;0
-  content: 0
 - id: '11'
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a\to a;0
-  content: 0
 - id: in_{2}
   type: regular
   position:
     x: 0
     y: 0
+  content: 1
   rules:
   - a\to a;0
-  content: 1
 - id: '21'
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a\to a;0
-  content: 0
 - id: '22'
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a\to a;0
-  content: 0
 - id: in_{3}
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a\to a;0
-  content: 0
 - id: '31'
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a\to a;0
-  content: 0
 - id: '32'
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a\to a;0
-  content: 0
 - id: '33'
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a\to a;0
-  content: 0
 - id: '34'
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a\to a;0
-  content: 0
 - id: '41'
   type: regular
   position:
     x: 0
     y: 0
+  content: 1
   rules:
   - a\to a;0
-  content: 1
 - id: '42'
   type: regular
   position:
     x: 0
     y: 0
+  content: 1
   rules:
   - a\to a;0
-  content: 1
 - id: '43'
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a\to a;0
-  content: 0
 - id: '44'
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a\to a;0
-  content: 0
 - id: out
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a\to a;0
   - a^{2}\to a;0
@@ -146,13 +144,11 @@ neurons:
   - a^{6}\to \lambda;0
   - a^{7}\to \lambda;0
   - a^{8}\to a;0
-  content: 0
 - id: env_{out}
   type: output
   position:
     x: 0
     y: 0
-  rules: []
   content: ''
 synapses:
 - from: env_{in_{1}}

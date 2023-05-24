@@ -4,35 +4,34 @@ neurons:
   position:
     x: 0
     y: 0
+  content: 2
   rules:
   - a^{2}/a\to a;99
   - a\to \lambda;0
-  content: 2
 - id: '2'
   type: regular
   position:
     x: 0
     y: 0
+  content: 1
   rules:
   - a\to a;99
   - a\to a;100
-  content: 1
 - id: '3'
   type: regular
   position:
     x: 0
     y: 0
+  content: 3
   rules:
   - a^{3}\to a;0
   - a\to a;100
   - a^{2}\to \lambda;0
-  content: 3
 - id: env_{out}
   type: output
   position:
     x: 0
     y: 0
-  rules: []
   content: ''
 synapses:
 - from: '1'

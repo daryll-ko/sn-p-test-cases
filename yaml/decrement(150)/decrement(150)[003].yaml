@@ -4,53 +4,53 @@ neurons:
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a^{2}\to a;0
   - a\to \lambda;0
-  content: 0
 - id: L_{i,1}
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a\to a;0
-  content: 0
 - id: L_{i,2}
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a\to a;1
-  content: 0
 - id: L_{j}
   type: regular
   position:
     x: 0
     y: 0
+  content: 0
   rules:
   - a^{2}\to a;0
   - a\to \lambda;0
-  content: 0
 - id: L_{k}
   type: regular
   position:
     x: 0
     y: 0
+  content: 1
   rules:
   - a^{2}\to a;0
   - a\to \lambda;0
-  content: 1
 - id: r
   type: regular
   position:
     x: 0
     y: 0
+  content: 298
   rules:
   - a(aa)^{+}/a^{3}\to a;0
   - a\to a;1
-  content: 298
 synapses:
 - from: L_{i}
   to: L_{i,1}
