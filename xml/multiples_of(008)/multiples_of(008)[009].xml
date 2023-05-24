@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+    <n_1>
+        <id>n_1</id>
+        <position>
+            <x>0</x>
+            <y>0</y>
+        </position>
+        <rules>2a/a-&gt;a;7 a/a-&gt;0;0</rules>
+        <spikes>1</spikes>
+        <delay>0</delay>
+        <out>n_2</out>
+        <out>n_3</out>
+        <outWeights>
+            <n_2>1</n_2>
+            <n_3>1</n_3>
+        </outWeights>
+    </n_1>
+    <n_2>
+        <id>n_2</id>
+        <position>
+            <x>0</x>
+            <y>0</y>
+        </position>
+        <rules>a/a-&gt;a;7 a/a-&gt;a;8</rules>
+        <spikes>0</spikes>
+        <delay>0</delay>
+        <out>n_1</out>
+        <out>n_3</out>
+        <outWeights>
+            <n_1>1</n_1>
+            <n_3>1</n_3>
+        </outWeights>
+    </n_2>
+    <n_3>
+        <id>n_3</id>
+        <position>
+            <x>0</x>
+            <y>0</y>
+        </position>
+        <rules>3a/3a-&gt;a;0 a/a-&gt;a;8 2a/2a-&gt;0;0</rules>
+        <spikes>0</spikes>
+        <delay>0</delay>
+        <out>env_out</out>
+        <outWeights>
+            <env_out>1</env_out>
+        </outWeights>
+    </n_3>
+    <env_out>
+        <id>env_out</id>
+        <position>
+            <x>0</x>
+            <y>0</y>
+        </position>
+        <bitstring>1,0,0,0,0,0,0,0,0</bitstring>
+        <isOutput>true</isOutput>
+    </env_out>
+</content>
