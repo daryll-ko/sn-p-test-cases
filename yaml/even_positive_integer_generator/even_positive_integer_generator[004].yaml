@@ -7,7 +7,7 @@ neurons:
   rules:
   - a^{2}\to a;0
   - a\to \lambda;0
-  content: 1
+  content: 2
 - id: '2'
   type: regular
   position:
@@ -16,7 +16,7 @@ neurons:
   rules:
   - a^{2}\to a;0
   - a\to \lambda;0
-  content: 1
+  content: 2
 - id: '3'
   type: regular
   position:
@@ -25,7 +25,7 @@ neurons:
   rules:
   - a^{2}\to a;0
   - a\to \lambda;0
-  content: 1
+  content: 2
 - id: '4'
   type: regular
   position:
@@ -59,18 +59,14 @@ neurons:
   rules:
   - a^{2}\to a;0
   - a^{3}\to \lambda;0
-  content: 2
+  content: 3
 - id: env_{out}
   type: output
   position:
     x: 0
     y: 0
   rules: []
-  content:
-  - 1
-  - 0
-  - 0
-  - 0
+  content: 1,0,0,0
 synapses:
 - from: '1'
   to: '4'

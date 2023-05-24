@@ -38,7 +38,7 @@
         "a\\to a;1",
         "a^{2}\\to \\lambda;0"
       ],
-      "content": 0
+      "content": 1
     },
     {
       "id": "env_{out}",
@@ -48,10 +48,7 @@
         "y": 0
       },
       "rules": [],
-      "content": [
-        1,
-        0
-      ]
+      "content": "1,0"
     }
   ],
   "synapses": [

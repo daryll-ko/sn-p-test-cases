@@ -11,7 +11,7 @@
         "a^{2}/a\\to a;1",
         "a\\to \\lambda;0"
       ],
-      "content": 2
+      "content": 1
     },
     {
       "id": "2",
@@ -24,7 +24,7 @@
         "a\\to a;1",
         "a\\to a;2"
       ],
-      "content": 1
+      "content": 0
     },
     {
       "id": "3",
@@ -38,7 +38,7 @@
         "a\\to a;2",
         "a^{2}\\to \\lambda;0"
       ],
-      "content": 2
+      "content": 1
     },
     {
       "id": "env_{out}",
@@ -48,10 +48,7 @@
         "y": 0
       },
       "rules": [],
-      "content": [
-        1,
-        0
-      ]
+      "content": "1,0"
     }
   ],
   "synapses": [

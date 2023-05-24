@@ -11,7 +11,7 @@
         "a^{2}\\to a;0",
         "a\\to \\lambda;0"
       ],
-      "content": 1
+      "content": 2
     },
     {
       "id": "2",
@@ -24,7 +24,7 @@
         "a^{2}\\to a;0",
         "a\\to \\lambda;0"
       ],
-      "content": 1
+      "content": 2
     },
     {
       "id": "3",
@@ -37,7 +37,7 @@
         "a^{2}\\to a;0",
         "a\\to \\lambda;0"
       ],
-      "content": 1
+      "content": 2
     },
     {
       "id": "4",
@@ -87,7 +87,7 @@
         "a^{2}\\to a;0",
         "a^{3}\\to \\lambda;0"
       ],
-      "content": 2
+      "content": 3
     },
     {
       "id": "env_{out}",
@@ -97,12 +97,7 @@
         "y": 0
       },
       "rules": [],
-      "content": [
-        1,
-        0,
-        0,
-        0
-      ]
+      "content": "1,0,0,0"
     }
   ],
   "synapses": [

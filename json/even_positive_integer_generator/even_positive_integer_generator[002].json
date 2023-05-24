@@ -97,10 +97,7 @@
         "y": 0
       },
       "rules": [],
-      "content": [
-        1,
-        0
-      ]
+      "content": "1,0"
     }
   ],
   "synapses": [

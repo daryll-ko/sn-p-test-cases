@@ -33,18 +33,7 @@ neurons:
     x: 0
     y: 0
   rules: []
-  content:
-  - 1
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  content: 1,0,0,0,0,0,0,0,0,0,0
 synapses:
 - from: '1'
   to: '2'

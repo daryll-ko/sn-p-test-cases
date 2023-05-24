@@ -7,7 +7,7 @@
             <y>0</y>
         </position>
         <rules>2a/a-&gt;a;3 a/a-&gt;0;0</rules>
-        <spikes>1</spikes>
+        <spikes>0</spikes>
         <delay>0</delay>
         <out>n_2</out>
         <out>n_3</out>

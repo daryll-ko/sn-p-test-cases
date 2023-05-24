@@ -49,7 +49,7 @@ neurons:
   rules:
   - a^{2}\to a;0
   - a\to \lambda;0
-  content: 2
+  content: 1
 - id: L_{k}
   type: regular
   position:
@@ -58,7 +58,7 @@ neurons:
   rules:
   - a^{2}\to a;0
   - a\to \lambda;0
-  content: 1
+  content: 0
 - id: r
   type: regular
   position:

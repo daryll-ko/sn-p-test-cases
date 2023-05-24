@@ -5,51 +5,21 @@ neurons:
     x: 0
     y: 0
   rules: []
-  content:
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  content: 1,1,1,1,1,1,1,1,1,1
 - id: env_{in_{2}}
   type: input
   position:
     x: 0
     y: 0
   rules: []
-  content:
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  content: 1,1,1,1,1,1,1,1,1,1
 - id: env_{in_{3}}
   type: input
   position:
     x: 0
     y: 0
   rules: []
-  content:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  content: 0,0,0,0,0,0,0,0,0,0
 - id: in_{1}
   type: regular
   position:
@@ -183,11 +153,7 @@ neurons:
     x: 0
     y: 0
   rules: []
-  content:
-  - 0
-  - 0
-  - 1
-  - 0
+  content: 0,0,1,0
 synapses:
 - from: env_{in_{1}}
   to: in_{1}
