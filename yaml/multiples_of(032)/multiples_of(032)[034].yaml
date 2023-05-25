@@ -4,7 +4,7 @@ neurons:
   position:
     x: 0
     y: 0
-  content: 1
+  content: 0
   rules:
   - a^{2}/a\to a;31
   - a\to\lambda
@@ -32,7 +32,7 @@ neurons:
   position:
     x: 0
     y: 0
-  content: 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+  content: '1000000000000000000000000000000000'
 synapses:
 - from: '1'
   to: '2'

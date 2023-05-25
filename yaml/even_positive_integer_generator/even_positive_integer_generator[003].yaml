@@ -65,7 +65,7 @@ neurons:
   position:
     x: 0
     y: 0
-  content: 1,0,0
+  content: '100'
 synapses:
 - from: '1'
   to: '4'

@@ -7,7 +7,7 @@
         "x": 0,
         "y": 0
       },
-      "content": 2,
+      "content": 1,
       "rules": [
         "a^{2}\\to a;0",
         "a\\to\\lambda"
@@ -20,7 +20,7 @@
         "x": 0,
         "y": 0
       },
-      "content": 2,
+      "content": 1,
       "rules": [
         "a^{2}\\to a;0",
         "a\\to\\lambda"
@@ -33,7 +33,7 @@
         "x": 0,
         "y": 0
       },
-      "content": 2,
+      "content": 1,
       "rules": [
         "a^{2}\\to a;0",
         "a\\to\\lambda"
@@ -83,7 +83,7 @@
         "x": 0,
         "y": 0
       },
-      "content": 3,
+      "content": 2,
       "rules": [
         "a^{2}\\to a;0",
         "a^{3}\\to\\lambda"
@@ -96,7 +96,7 @@
         "x": 0,
         "y": 0
       },
-      "content": "1,0,0,0"
+      "content": "1000"
     }
   ],
   "synapses": [

@@ -7,7 +7,7 @@
             <y>0</y>
         </position>
         <rules>2a/a-&gt;a;26 a/a-&gt;0;0</rules>
-        <spikes>2</spikes>
+        <spikes>1</spikes>
         <delay>0</delay>
         <out>n_2</out>
         <out>n_3</out>
@@ -23,7 +23,7 @@
             <y>0</y>
         </position>
         <rules>a/a-&gt;a;26 a/a-&gt;a;27</rules>
-        <spikes>1</spikes>
+        <spikes>0</spikes>
         <delay>0</delay>
         <out>n_1</out>
         <out>n_3</out>
@@ -39,7 +39,7 @@
             <y>0</y>
         </position>
         <rules>3a/3a-&gt;a;0 a/a-&gt;a;27 2a/2a-&gt;0;0</rules>
-        <spikes>2</spikes>
+        <spikes>1</spikes>
         <delay>0</delay>
         <out>env_out</out>
         <outWeights>
