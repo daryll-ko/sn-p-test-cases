@@ -207,10 +207,10 @@
         "a\\to a;0",
         "a^{2}\\to a;0",
         "a^{3}\\to a;0",
-        "a^{4}\\to \\lambda;0",
+        "a^{4}\\to\\lambda",
         "a^{5}\\to a;0",
-        "a^{6}\\to \\lambda;0",
-        "a^{7}\\to \\lambda;0",
+        "a^{6}\\to\\lambda",
+        "a^{7}\\to\\lambda",
         "a^{8}\\to a;0"
       ]
     },

@@ -7,10 +7,10 @@
         "x": 0,
         "y": 0
       },
-      "content": 1,
+      "content": 2,
       "rules": [
         "a^{2}\\to a;0",
-        "a\\to \\lambda;0"
+        "a\\to\\lambda"
       ]
     },
     {
@@ -20,10 +20,10 @@
         "x": 0,
         "y": 0
       },
-      "content": 1,
+      "content": 2,
       "rules": [
         "a^{2}\\to a;0",
-        "a\\to \\lambda;0"
+        "a\\to\\lambda"
       ]
     },
     {
@@ -33,10 +33,10 @@
         "x": 0,
         "y": 0
       },
-      "content": 1,
+      "content": 2,
       "rules": [
         "a^{2}\\to a;0",
-        "a\\to \\lambda;0"
+        "a\\to\\lambda"
       ]
     },
     {
@@ -83,10 +83,10 @@
         "x": 0,
         "y": 0
       },
-      "content": 2,
+      "content": 3,
       "rules": [
         "a^{2}\\to a;0",
-        "a^{3}\\to \\lambda;0"
+        "a^{3}\\to\\lambda"
       ]
     },
     {

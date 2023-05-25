@@ -7,7 +7,7 @@ neurons:
   content: 0
   rules:
   - a^{2}\to a;0
-  - a\to \lambda;0
+  - a\to\lambda
 - id: L_{i,1}
   type: regular
   position:
@@ -49,7 +49,7 @@ neurons:
   content: 0
   rules:
   - a^{2}\to a;0
-  - a\to \lambda;0
+  - a\to\lambda
 - id: L_{k}
   type: regular
   position:
@@ -58,7 +58,7 @@ neurons:
   content: 1
   rules:
   - a^{2}\to a;0
-  - a\to \lambda;0
+  - a\to\lambda
 - id: r
   type: regular
   position:

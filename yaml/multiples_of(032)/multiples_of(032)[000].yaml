@@ -7,7 +7,7 @@ neurons:
   content: 2
   rules:
   - a^{2}/a\to a;31
-  - a\to \lambda;0
+  - a\to\lambda
 - id: '2'
   type: regular
   position:
@@ -26,7 +26,7 @@ neurons:
   rules:
   - a^{3}\to a;0
   - a\to a;32
-  - a^{2}\to \lambda;0
+  - a^{2}\to\lambda
 - id: env_{out}
   type: output
   position:

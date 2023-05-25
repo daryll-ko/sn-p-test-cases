@@ -4,28 +4,28 @@ neurons:
   position:
     x: 0
     y: 0
-  content: 1
+  content: 2
   rules:
   - a^{2}\to a;0
-  - a\to \lambda;0
+  - a\to\lambda
 - id: '2'
   type: regular
   position:
     x: 0
     y: 0
-  content: 1
+  content: 2
   rules:
   - a^{2}\to a;0
-  - a\to \lambda;0
+  - a\to\lambda
 - id: '3'
   type: regular
   position:
     x: 0
     y: 0
-  content: 1
+  content: 2
   rules:
   - a^{2}\to a;0
-  - a\to \lambda;0
+  - a\to\lambda
 - id: '4'
   type: regular
   position:
@@ -56,10 +56,10 @@ neurons:
   position:
     x: 0
     y: 0
-  content: 2
+  content: 3
   rules:
   - a^{2}\to a;0
-  - a^{3}\to \lambda;0
+  - a^{3}\to\lambda
 - id: env_{out}
   type: output
   position:

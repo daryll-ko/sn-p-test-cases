@@ -87,7 +87,7 @@
             <y>0</y>
         </position>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
-        <spikes>0</spikes>
+        <spikes>1</spikes>
         <delay>0</delay>
     </L_j>
     <L_k>
@@ -97,7 +97,7 @@
             <y>0</y>
         </position>
         <rules>2a/2a-&gt;a;0 a/a-&gt;0;0</rules>
-        <spikes>1</spikes>
+        <spikes>2</spikes>
         <delay>0</delay>
     </L_k>
     <r>

@@ -10,7 +10,7 @@
       "content": 0,
       "rules": [
         "a^{2}\\to a;0",
-        "a\\to \\lambda;0"
+        "a\\to\\lambda"
       ]
     },
     {
@@ -23,7 +23,7 @@
       "content": 0,
       "rules": [
         "a^{2}\\to a;0",
-        "a\\to \\lambda;0"
+        "a\\to\\lambda"
       ]
     },
     {
@@ -36,7 +36,7 @@
       "content": 0,
       "rules": [
         "a^{2}\\to a;0",
-        "a\\to \\lambda;0"
+        "a\\to\\lambda"
       ]
     },
     {
@@ -86,7 +86,7 @@
       "content": 0,
       "rules": [
         "a^{2}\\to a;0",
-        "a^{3}\\to \\lambda;0"
+        "a^{3}\\to\\lambda"
       ]
     },
     {
