@@ -1,0 +1,32 @@
+- - - - - - - - - - - - - - - time: 0 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> no events during phase 1
+
+> phase 2: showing starting state
+
+>> a: []
+>> b: []
+>> both: <0/0>
+>> one: <0/0>
+>> min: []
+>> max: []
+
+> phase 3: selecting rules
+
+>> no events during phase 3
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: []
+>> b: []
+>> both: <0/0>
+>> one: <0/0>
+>> min: [0]
+>> max: [0]
+

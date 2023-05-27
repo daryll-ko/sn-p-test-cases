@@ -1,0 +1,114 @@
+- - - - - - - - - - - - - - - time: 0 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> no events during phase 1
+
+> phase 2: showing starting state
+
+>> 1: <2/0>
+>> 2: <2/0>
+>> 3: <2/0>
+>> 4: <0/0>
+>> 5: <0/0>
+>> 6: <0/0>
+>> 7: <2/0>
+>> env_{out}: []
+
+> phase 3: selecting rules
+
+>> 1: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> 2: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> 3: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> 7: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+>> detected first output spike
+
+> phase 5: showing in-between state
+
+>> 1: <0/0>
+>> 2: <0/0>
+>> 3: <0/0>
+>> 4: <0/0>
+>> 5: <0/0>
+>> 6: <0/0>
+>> 7: <0/0>
+>> env_{out}: [1]
+
+- - - - - - - - - - - - - - - time: 1 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> 4: 1
+>> 5: 1
+>> 6: 1
+
+> phase 2: showing starting state
+
+>> 1: <0/0>
+>> 2: <0/0>
+>> 3: <0/0>
+>> 4: <1/0>
+>> 5: <1/0>
+>> 6: <1/0>
+>> 7: <0/0>
+>> env_{out}: [1]
+
+> phase 3: selecting rules
+
+>> 4: Rule(regex='^a$', consumed=1, produced=1, delay=1)
+>> 5: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> 6: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> 1: <0/0>
+>> 2: <0/0>
+>> 3: <0/0>
+>> 4: <0/0>
+>> 5: <0/0>
+>> 6: <0/0>
+>> 7: <0/0>
+>> env_{out}: [1, 0]
+
+- - - - - - - - - - - - - - - time: 2 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> 1: 1
+>> 2: 1
+>> 3: 1
+>> 7: 2
+
+> phase 2: showing starting state
+
+>> 1: <1/0>
+>> 2: <1/0>
+>> 3: <1/0>
+>> 4: <0/0>
+>> 5: <0/0>
+>> 6: <0/0>
+>> 7: <2/0>
+>> env_{out}: [1, 0]
+
+> phase 3: selecting rules
+
+>> 1: Rule(regex='^a$', consumed=1, produced=0, delay=0)
+>> 2: Rule(regex='^a$', consumed=1, produced=0, delay=0)
+>> 3: Rule(regex='^a$', consumed=1, produced=0, delay=0)
+>> 7: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+>> detected second output spike, wrapping up...
+

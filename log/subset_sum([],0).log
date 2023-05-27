@@ -1,0 +1,381 @@
+- - - - - - - - - - - - - - - time: 0 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> no events during phase 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <1/0>
+>> in_{1}: <0/0>
+>> h_{1}: <1/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <0/0>
+>> h_{5}: <0/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <0/0>
+
+> phase 3: selecting rules
+
+>> c_{0}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> h_{1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> in_{1}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <0/0>
+>> h_{5}: <0/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <0/0>
+
+- - - - - - - - - - - - - - - time: 1 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> h_{2}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> in_{1}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <1/0>
+>> h_{3}: <0/0>
+>> h_{4}: <0/0>
+>> h_{5}: <0/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <0/0>
+
+> phase 3: selecting rules
+
+>> h_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> in_{1}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <0/0>
+>> h_{5}: <0/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <0/0>
+
+- - - - - - - - - - - - - - - time: 2 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> h_{3}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> in_{1}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <1/0>
+>> h_{4}: <0/0>
+>> h_{5}: <0/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <0/0>
+
+> phase 3: selecting rules
+
+>> h_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> in_{1}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <0/0>
+>> h_{5}: <0/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <0/0>
+
+- - - - - - - - - - - - - - - time: 3 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> h_{4}: 1
+>> h_{5}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> in_{1}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <1/0>
+>> h_{5}: <1/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <0/0>
+
+> phase 3: selecting rules
+
+>> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> h_{5}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> in_{1}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <0/0>
+>> h_{5}: <0/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <0/0>
+
+- - - - - - - - - - - - - - - time: 4 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> h_{4}: 1
+>> h_{5}: 1
+>> t_{1}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> in_{1}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <1/0>
+>> h_{5}: <1/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <1/0>
+>> t_{2}: <0/0>
+>> acc: <0/0>
+
+> phase 3: selecting rules
+
+>> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> h_{5}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> t_{1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> in_{1}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <0/0>
+>> h_{5}: <0/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <0/0>
+
+- - - - - - - - - - - - - - - time: 5 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> h_{4}: 2
+>> h_{5}: 2
+>> t_{1}: 1
+>> t_{2}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> in_{1}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <2/0>
+>> h_{5}: <2/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <1/0>
+>> t_{2}: <1/0>
+>> acc: <0/0>
+
+> phase 3: selecting rules
+
+>> t_{1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> in_{1}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <2/0>
+>> h_{5}: <2/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <1/0>
+>> acc: <0/0>
+
+- - - - - - - - - - - - - - - time: 6 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> h_{4}: 1
+>> h_{5}: 1
+>> t_{2}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> in_{1}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <2/0>
+>> acc: <0/0>
+
+> phase 3: selecting rules
+
+>> t_{2}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> in_{1}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <0/0>
+
+- - - - - - - - - - - - - - - time: 7 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> in_{1}: 1
+>> acc: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> in_{1}: <1/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> no events during phase 3
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> in_{1}: <1/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+

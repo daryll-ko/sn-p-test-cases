@@ -1,0 +1,318 @@
+- - - - - - - - - - - - - - - time: 0 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> stall_{2,0}: 1
+
+> phase 2: showing starting state
+
+>> in_{0}: []
+>> in_{1}: []
+>> in_{2}: [1, 1]
+>> in_{3}: []
+>> in_{4}: []
+>> stall_{2,0}: <1/0>
+>> stall_{3,0}: <0/0>
+>> stall_{3,1}: <0/0>
+>> stall_{4,0}: <0/0>
+>> stall_{4,1}: <0/0>
+>> stall_{4,2}: <0/0>
+>> add_{0,1}: <0/0>
+>> add_{0,1,2}: <0/0>
+>> add_{0,1,2,3}: <0/0>
+>> add_{0,1,2,3,4}: <0/0>
+>> out: []
+
+> phase 3: selecting rules
+
+>> stall_{2,0}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> in_{0}: []
+>> in_{1}: []
+>> in_{2}: [1, 1]
+>> in_{3}: []
+>> in_{4}: []
+>> stall_{2,0}: <0/0>
+>> stall_{3,0}: <0/0>
+>> stall_{3,1}: <0/0>
+>> stall_{4,0}: <0/0>
+>> stall_{4,1}: <0/0>
+>> stall_{4,2}: <0/0>
+>> add_{0,1}: <0/0>
+>> add_{0,1,2}: <0/0>
+>> add_{0,1,2,3}: <0/0>
+>> add_{0,1,2,3,4}: <0/0>
+>> out: [0]
+
+- - - - - - - - - - - - - - - time: 1 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> stall_{2,0}: 1
+>> add_{0,1,2}: 1
+
+> phase 2: showing starting state
+
+>> in_{0}: []
+>> in_{1}: []
+>> in_{2}: [1, 1]
+>> in_{3}: []
+>> in_{4}: []
+>> stall_{2,0}: <1/0>
+>> stall_{3,0}: <0/0>
+>> stall_{3,1}: <0/0>
+>> stall_{4,0}: <0/0>
+>> stall_{4,1}: <0/0>
+>> stall_{4,2}: <0/0>
+>> add_{0,1}: <0/0>
+>> add_{0,1,2}: <1/0>
+>> add_{0,1,2,3}: <0/0>
+>> add_{0,1,2,3,4}: <0/0>
+>> out: [0]
+
+> phase 3: selecting rules
+
+>> stall_{2,0}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> add_{0,1,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> in_{0}: []
+>> in_{1}: []
+>> in_{2}: [1, 1]
+>> in_{3}: []
+>> in_{4}: []
+>> stall_{2,0}: <0/0>
+>> stall_{3,0}: <0/0>
+>> stall_{3,1}: <0/0>
+>> stall_{4,0}: <0/0>
+>> stall_{4,1}: <0/0>
+>> stall_{4,2}: <0/0>
+>> add_{0,1}: <0/0>
+>> add_{0,1,2}: <0/0>
+>> add_{0,1,2,3}: <0/0>
+>> add_{0,1,2,3,4}: <0/0>
+>> out: [0, 0]
+
+- - - - - - - - - - - - - - - time: 2 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> add_{0,1,2}: 1
+>> add_{0,1,2,3}: 1
+
+> phase 2: showing starting state
+
+>> in_{0}: []
+>> in_{1}: []
+>> in_{2}: [1, 1]
+>> in_{3}: []
+>> in_{4}: []
+>> stall_{2,0}: <0/0>
+>> stall_{3,0}: <0/0>
+>> stall_{3,1}: <0/0>
+>> stall_{4,0}: <0/0>
+>> stall_{4,1}: <0/0>
+>> stall_{4,2}: <0/0>
+>> add_{0,1}: <0/0>
+>> add_{0,1,2}: <1/0>
+>> add_{0,1,2,3}: <1/0>
+>> add_{0,1,2,3,4}: <0/0>
+>> out: [0, 0]
+
+> phase 3: selecting rules
+
+>> add_{0,1,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> add_{0,1,2,3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> in_{0}: []
+>> in_{1}: []
+>> in_{2}: [1, 1]
+>> in_{3}: []
+>> in_{4}: []
+>> stall_{2,0}: <0/0>
+>> stall_{3,0}: <0/0>
+>> stall_{3,1}: <0/0>
+>> stall_{4,0}: <0/0>
+>> stall_{4,1}: <0/0>
+>> stall_{4,2}: <0/0>
+>> add_{0,1}: <0/0>
+>> add_{0,1,2}: <0/0>
+>> add_{0,1,2,3}: <0/0>
+>> add_{0,1,2,3,4}: <0/0>
+>> out: [0, 0, 0]
+
+- - - - - - - - - - - - - - - time: 3 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> add_{0,1,2,3}: 1
+>> add_{0,1,2,3,4}: 1
+
+> phase 2: showing starting state
+
+>> in_{0}: []
+>> in_{1}: []
+>> in_{2}: [1, 1]
+>> in_{3}: []
+>> in_{4}: []
+>> stall_{2,0}: <0/0>
+>> stall_{3,0}: <0/0>
+>> stall_{3,1}: <0/0>
+>> stall_{4,0}: <0/0>
+>> stall_{4,1}: <0/0>
+>> stall_{4,2}: <0/0>
+>> add_{0,1}: <0/0>
+>> add_{0,1,2}: <0/0>
+>> add_{0,1,2,3}: <1/0>
+>> add_{0,1,2,3,4}: <1/0>
+>> out: [0, 0, 0]
+
+> phase 3: selecting rules
+
+>> add_{0,1,2,3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> add_{0,1,2,3,4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> in_{0}: []
+>> in_{1}: []
+>> in_{2}: [1, 1]
+>> in_{3}: []
+>> in_{4}: []
+>> stall_{2,0}: <0/0>
+>> stall_{3,0}: <0/0>
+>> stall_{3,1}: <0/0>
+>> stall_{4,0}: <0/0>
+>> stall_{4,1}: <0/0>
+>> stall_{4,2}: <0/0>
+>> add_{0,1}: <0/0>
+>> add_{0,1,2}: <0/0>
+>> add_{0,1,2,3}: <0/0>
+>> add_{0,1,2,3,4}: <0/0>
+>> out: [0, 0, 0, 1]
+
+- - - - - - - - - - - - - - - time: 4 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> add_{0,1,2,3,4}: 1
+
+> phase 2: showing starting state
+
+>> in_{0}: []
+>> in_{1}: []
+>> in_{2}: [1, 1]
+>> in_{3}: []
+>> in_{4}: []
+>> stall_{2,0}: <0/0>
+>> stall_{3,0}: <0/0>
+>> stall_{3,1}: <0/0>
+>> stall_{4,0}: <0/0>
+>> stall_{4,1}: <0/0>
+>> stall_{4,2}: <0/0>
+>> add_{0,1}: <0/0>
+>> add_{0,1,2}: <0/0>
+>> add_{0,1,2,3}: <0/0>
+>> add_{0,1,2,3,4}: <1/0>
+>> out: [0, 0, 0, 1]
+
+> phase 3: selecting rules
+
+>> add_{0,1,2,3,4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> in_{0}: []
+>> in_{1}: []
+>> in_{2}: [1, 1]
+>> in_{3}: []
+>> in_{4}: []
+>> stall_{2,0}: <0/0>
+>> stall_{3,0}: <0/0>
+>> stall_{3,1}: <0/0>
+>> stall_{4,0}: <0/0>
+>> stall_{4,1}: <0/0>
+>> stall_{4,2}: <0/0>
+>> add_{0,1}: <0/0>
+>> add_{0,1,2}: <0/0>
+>> add_{0,1,2,3}: <0/0>
+>> add_{0,1,2,3,4}: <0/0>
+>> out: [0, 0, 0, 1, 1]
+
+- - - - - - - - - - - - - - - time: 5 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> no events during phase 1
+
+> phase 2: showing starting state
+
+>> in_{0}: []
+>> in_{1}: []
+>> in_{2}: [1, 1]
+>> in_{3}: []
+>> in_{4}: []
+>> stall_{2,0}: <0/0>
+>> stall_{3,0}: <0/0>
+>> stall_{3,1}: <0/0>
+>> stall_{4,0}: <0/0>
+>> stall_{4,1}: <0/0>
+>> stall_{4,2}: <0/0>
+>> add_{0,1}: <0/0>
+>> add_{0,1,2}: <0/0>
+>> add_{0,1,2,3}: <0/0>
+>> add_{0,1,2,3,4}: <0/0>
+>> out: [0, 0, 0, 1, 1]
+
+> phase 3: selecting rules
+
+>> no events during phase 3
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> in_{0}: []
+>> in_{1}: []
+>> in_{2}: [1, 1]
+>> in_{3}: []
+>> in_{4}: []
+>> stall_{2,0}: <0/0>
+>> stall_{3,0}: <0/0>
+>> stall_{3,1}: <0/0>
+>> stall_{4,0}: <0/0>
+>> stall_{4,1}: <0/0>
+>> stall_{4,2}: <0/0>
+>> add_{0,1}: <0/0>
+>> add_{0,1,2}: <0/0>
+>> add_{0,1,2,3}: <0/0>
+>> add_{0,1,2,3,4}: <0/0>
+>> out: [0, 0, 0, 1, 1, 0]
+

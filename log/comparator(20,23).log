@@ -1,0 +1,814 @@
+- - - - - - - - - - - - - - - time: 0 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: []
+>> max: []
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1]
+>> max: [1]
+
+- - - - - - - - - - - - - - - time: 1 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1]
+>> max: [1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1]
+>> max: [1, 1]
+
+- - - - - - - - - - - - - - - time: 2 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1]
+>> max: [1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1]
+>> max: [1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 3 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1]
+>> max: [1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1]
+>> max: [1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 4 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1]
+>> max: [1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 5 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 6 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 7 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 8 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 9 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 10 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 11 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 12 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 13 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 14 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 15 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 16 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 17 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 18 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 19 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 2
+>> one: 2
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <2/0>
+>> one: <2/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> one: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 20 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 1
+>> one: 1
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <1/0>
+>> one: <1/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a$', consumed=1, produced=0, delay=0)
+>> one: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 21 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 1
+>> one: 1
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <1/0>
+>> one: <1/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a$', consumed=1, produced=0, delay=0)
+>> one: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 22 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> both: 1
+>> one: 1
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <1/0>
+>> one: <1/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> both: Rule(regex='^a$', consumed=1, produced=0, delay=0)
+>> one: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+- - - - - - - - - - - - - - - time: 23 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> no events during phase 1
+
+> phase 2: showing starting state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+> phase 3: selecting rules
+
+>> no events during phase 3
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> a: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> b: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+>> both: <0/0>
+>> one: <0/0>
+>> min: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
+>> max: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+
