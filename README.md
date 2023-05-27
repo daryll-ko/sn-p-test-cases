@@ -10,7 +10,7 @@ You can download all existing test cases by visiting the `Releases` section and 
 
 ## Test case format
 
-Each format folder (`xml`, `json`, `yaml`) contains several systems. For each system, there's a file named $`\verb!<name>.<format>!`$ or $`\verb!<name>(<inputs>).<format>!`$ for the system itself and a file named $`\verb!<name>.log!`$ or $`\verb!<name>(<inputs>).log!`$ in the `log` folder to help track the system's behavior.
+Each format folder (`xml`, `json`, `yaml`) contains several systems. For each system, there's a file named $`\verb!name.format!`$ or $`\verb!name(inputs).format!`$ for the system itself and a file named $`\verb!name.log!`$ or $`\verb!name(inputs).log!`$ in the `log` folder to help track the system's behavior.
 
 ## Test case list
 
