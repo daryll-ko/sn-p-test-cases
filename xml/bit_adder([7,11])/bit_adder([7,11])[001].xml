@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+    <in_0>
+        <id>in_0</id>
+        <position>
+            <x>0</x>
+            <y>0</y>
+        </position>
+        <bitstring>1,1,1</bitstring>
+        <isInput>true</isInput>
+        <out>add_01</out>
+        <outWeights>
+            <add_01>1</add_01>
+        </outWeights>
+    </in_0>
+    <in_1>
+        <id>in_1</id>
+        <position>
+            <x>0</x>
+            <y>0</y>
+        </position>
+        <bitstring>1,1,0,1</bitstring>
+        <isInput>true</isInput>
+        <out>add_01</out>
+        <outWeights>
+            <add_01>1</add_01>
+        </outWeights>
+    </in_1>
+    <add_01>
+        <id>add_01</id>
+        <position>
+            <x>0</x>
+            <y>0</y>
+        </position>
+        <rules>a/a-&gt;a;0 2a/a-&gt;0;0 3a/2a-&gt;a;0</rules>
+        <spikes>3</spikes>
+        <delay>0</delay>
+        <out>out</out>
+        <outWeights>
+            <out>1</out>
+        </outWeights>
+    </add_01>
+    <out>
+        <id>out</id>
+        <position>
+            <x>0</x>
+            <y>0</y>
+        </position>
+        <bitstring>0</bitstring>
+        <isOutput>true</isOutput>
+    </out>
+</content>
