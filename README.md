@@ -14,6 +14,8 @@ Each format folder (`xml`, `json`, `yaml`) contains several systems and simulati
 
 ## Test case list
 
+All notes about probabilities below apply only for pseudorandom simulations (i.e., the simulator chooses the rule a neuron will apply uniformly at random).
+
 | Name                                 | Function                                                                                                                                                                                                            | Source                                                                                                              | Notes                                                                                                         |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | `positive_integer_generator`         | generates $`\{k \mid k \ge 2\}`$ using nondeterminism                                                                                                                                                               | [Leporati et al.](https://link.springer.com/article/10.1007/s11047-022-09917-y)                                     | probability of generating $`k`$ is $`\dfrac{1}{2^{k-1}}`$                                                     |
