@@ -109,7 +109,7 @@
             <y>0</y>
         </position>
         <rules>a(aa)+/2a-&gt;a;0</rules>
-        <spikes>1</spikes>
+        <spikes>2</spikes>
         <delay>0</delay>
         <out>e_11</out>
         <out>e_12</out>
@@ -125,7 +125,7 @@
             <y>0</y>
         </position>
         <rules>a(aa)+/2a-&gt;a;0</rules>
-        <spikes>1</spikes>
+        <spikes>6</spikes>
         <delay>0</delay>
         <out>e_21</out>
         <out>e_22</out>
@@ -141,7 +141,7 @@
             <y>0</y>
         </position>
         <rules>a(aa)+/2a-&gt;a;0</rules>
-        <spikes>10</spikes>
+        <spikes>1</spikes>
         <delay>0</delay>
         <out>e_31</out>
         <out>e_32</out>
@@ -157,7 +157,7 @@
             <y>0</y>
         </position>
         <rules>a(aa)+/2a-&gt;a;0</rules>
-        <spikes>1</spikes>
+        <spikes>3</spikes>
         <delay>0</delay>
         <out>g_1</out>
         <outWeights>
@@ -341,7 +341,7 @@
             <y>0</y>
         </position>
         <rules>2a/2a-&gt;0;0 a/a-&gt;a;0</rules>
-        <spikes>1</spikes>
+        <spikes>2</spikes>
         <delay>0</delay>
         <out>g_2</out>
         <out>g_3</out>
@@ -419,7 +419,7 @@
             <y>0</y>
         </position>
         <rules>a(aa)+/2a-&gt;a;0</rules>
-        <spikes>3</spikes>
+        <spikes>9</spikes>
         <delay>0</delay>
         <out>g_1</out>
         <outWeights>

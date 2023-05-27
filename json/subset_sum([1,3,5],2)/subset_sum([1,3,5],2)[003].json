@@ -97,7 +97,7 @@
         "x": 0,
         "y": 0
       },
-      "content": 1,
+      "content": 2,
       "rules": [
         "a(aa)^{+}/a^{2}\\to a;0"
       ]
@@ -109,7 +109,7 @@
         "x": 0,
         "y": 0
       },
-      "content": 5,
+      "content": 6,
       "rules": [
         "a(aa)^{+}/a^{2}\\to a;0"
       ]
@@ -121,7 +121,7 @@
         "x": 0,
         "y": 0
       },
-      "content": 10,
+      "content": 9,
       "rules": [
         "a(aa)^{+}/a^{2}\\to a;0"
       ]
@@ -145,7 +145,7 @@
         "x": 0,
         "y": 0
       },
-      "content": 1,
+      "content": 0,
       "rules": [
         "a\\to a;0"
       ]
@@ -157,7 +157,7 @@
         "x": 0,
         "y": 0
       },
-      "content": 1,
+      "content": 0,
       "rules": [
         "a\\to a;0"
       ]
@@ -169,7 +169,7 @@
         "x": 0,
         "y": 0
       },
-      "content": 1,
+      "content": 0,
       "rules": [
         "a\\to a;0"
       ]
@@ -181,7 +181,7 @@
         "x": 0,
         "y": 0
       },
-      "content": 1,
+      "content": 0,
       "rules": [
         "a\\to a;0"
       ]
@@ -193,7 +193,7 @@
         "x": 0,
         "y": 0
       },
-      "content": 0,
+      "content": 1,
       "rules": [
         "a\\to a;0"
       ]
@@ -205,7 +205,7 @@
         "x": 0,
         "y": 0
       },
-      "content": 0,
+      "content": 1,
       "rules": [
         "a\\to a;0"
       ]

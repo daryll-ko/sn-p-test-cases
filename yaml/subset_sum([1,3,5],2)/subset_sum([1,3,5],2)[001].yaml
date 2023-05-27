@@ -39,7 +39,7 @@ neurons:
   position:
     x: 0
     y: 0
-  content: 2
+  content: 1
   rules:
   - a^{2}\to a;0
   - a\to\lambda
@@ -48,7 +48,7 @@ neurons:
   position:
     x: 0
     y: 0
-  content: 2
+  content: 1
   rules:
   - a^{2}\to a;0
   - a\to\lambda
@@ -57,7 +57,7 @@ neurons:
   position:
     x: 0
     y: 0
-  content: 1
+  content: 2
   rules:
   - a^{2}\to a;0
   - a\to\lambda
