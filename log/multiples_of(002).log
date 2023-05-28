@@ -14,7 +14,7 @@
 > phase 3: selecting rules
 
 >> 1: Rule(regex='^a{2}$', consumed=1, produced=1, delay=1)
->> 2: Rule(regex='^a$', consumed=1, produced=1, delay=2)
+>> 2: Rule(regex='^a$', consumed=1, produced=1, delay=1)
 >> 3: Rule(regex='^a{3}$', consumed=3, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
@@ -62,6 +62,126 @@
 
 > phase 1: incoming spikes
 
+>> 1: 1
+>> 2: 1
+>> 3: 2
+
+> phase 2: showing starting state
+
+>> 1: <2/0>
+>> 2: <1/0>
+>> 3: <2/0>
+>> env_{out}: [1, 0]
+
+> phase 3: selecting rules
+
+>> 1: Rule(regex='^a{2}$', consumed=1, produced=1, delay=1)
+>> 2: Rule(regex='^a$', consumed=1, produced=1, delay=1)
+>> 3: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> 1: <1/0>
+>> 2: <0/0>
+>> 3: <0/0>
+>> env_{out}: [1, 0, 0]
+
+- - - - - - - - - - - - - - - time: 3 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> no events during phase 1
+
+> phase 2: showing starting state
+
+>> 1: <1/0>
+>> 2: <0/0>
+>> 3: <0/0>
+>> env_{out}: [1, 0, 0]
+
+> phase 3: selecting rules
+
+>> no events during phase 3
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> 1: <1/0>
+>> 2: <0/0>
+>> 3: <0/0>
+>> env_{out}: [1, 0, 0, 0]
+
+- - - - - - - - - - - - - - - time: 4 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> 1: 1
+>> 2: 1
+>> 3: 2
+
+> phase 2: showing starting state
+
+>> 1: <2/0>
+>> 2: <1/0>
+>> 3: <2/0>
+>> env_{out}: [1, 0, 0, 0]
+
+> phase 3: selecting rules
+
+>> 1: Rule(regex='^a{2}$', consumed=1, produced=1, delay=1)
+>> 2: Rule(regex='^a$', consumed=1, produced=1, delay=2)
+>> 3: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> 1: <1/0>
+>> 2: <0/0>
+>> 3: <0/0>
+>> env_{out}: [1, 0, 0, 0, 0]
+
+- - - - - - - - - - - - - - - time: 5 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> no events during phase 1
+
+> phase 2: showing starting state
+
+>> 1: <1/0>
+>> 2: <0/0>
+>> 3: <0/0>
+>> env_{out}: [1, 0, 0, 0, 0]
+
+> phase 3: selecting rules
+
+>> no events during phase 3
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> 1: <1/0>
+>> 2: <0/0>
+>> 3: <0/0>
+>> env_{out}: [1, 0, 0, 0, 0, 0]
+
+- - - - - - - - - - - - - - - time: 6 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
 >> 3: 1
 
 > phase 2: showing starting state
@@ -69,7 +189,7 @@
 >> 1: <1/0>
 >> 2: <0/0>
 >> 3: <1/0>
->> env_{out}: [1, 0]
+>> env_{out}: [1, 0, 0, 0, 0, 0]
 
 > phase 3: selecting rules
 
@@ -85,9 +205,9 @@
 >> 1: <0/0>
 >> 2: <0/0>
 >> 3: <0/0>
->> env_{out}: [1, 0, 0]
+>> env_{out}: [1, 0, 0, 0, 0, 0, 0]
 
-- - - - - - - - - - - - - - - time: 3 - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - time: 7 - - - - - - - - - - - - - - - 
 
 > phase 1: incoming spikes
 
@@ -98,7 +218,7 @@
 >> 1: <1/0>
 >> 2: <0/0>
 >> 3: <0/0>
->> env_{out}: [1, 0, 0]
+>> env_{out}: [1, 0, 0, 0, 0, 0, 0]
 
 > phase 3: selecting rules
 
@@ -113,9 +233,9 @@
 >> 1: <0/0>
 >> 2: <0/0>
 >> 3: <0/0>
->> env_{out}: [1, 0, 0, 0]
+>> env_{out}: [1, 0, 0, 0, 0, 0, 0, 0]
 
-- - - - - - - - - - - - - - - time: 4 - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - time: 8 - - - - - - - - - - - - - - - 
 
 > phase 1: incoming spikes
 
@@ -126,7 +246,7 @@
 >> 1: <0/0>
 >> 2: <0/0>
 >> 3: <0/0>
->> env_{out}: [1, 0, 0, 0]
+>> env_{out}: [1, 0, 0, 0, 0, 0, 0, 0]
 
 > phase 3: selecting rules
 
