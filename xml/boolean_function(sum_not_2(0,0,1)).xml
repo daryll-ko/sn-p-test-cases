@@ -7,6 +7,7 @@
             <y>0</y>
         </position>
         <bitstring>0,0,0,0,0</bitstring>
+        <delay>0</delay>
         <isInput>true</isInput>
         <out>in_0</out>
         <outWeights>
@@ -20,6 +21,7 @@
             <y>0</y>
         </position>
         <bitstring>0,0,0,0,0</bitstring>
+        <delay>0</delay>
         <isInput>true</isInput>
         <out>in_1</out>
         <outWeights>
@@ -33,6 +35,7 @@
             <y>0</y>
         </position>
         <bitstring>1,1,1,1,1</bitstring>
+        <delay>0</delay>
         <isInput>true</isInput>
         <out>in_2</out>
         <outWeights>
@@ -266,6 +269,7 @@
             <y>0</y>
         </position>
         <bitstring></bitstring>
+        <spikes>0</spikes>
         <isOutput>true</isOutput>
     </env_out>
 </content>

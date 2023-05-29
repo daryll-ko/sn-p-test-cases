@@ -7,6 +7,7 @@
             <y>0</y>
         </position>
         <bitstring></bitstring>
+        <delay>0</delay>
         <isInput>true</isInput>
         <out>one</out>
         <out>both</out>
@@ -22,6 +23,7 @@
             <y>0</y>
         </position>
         <bitstring></bitstring>
+        <delay>0</delay>
         <isInput>true</isInput>
         <out>one</out>
         <out>both</out>
@@ -67,6 +69,7 @@
             <y>0</y>
         </position>
         <bitstring></bitstring>
+        <spikes>0</spikes>
         <isOutput>true</isOutput>
     </min>
     <max>
@@ -76,6 +79,7 @@
             <y>0</y>
         </position>
         <bitstring></bitstring>
+        <spikes>0</spikes>
         <isOutput>true</isOutput>
     </max>
 </content>

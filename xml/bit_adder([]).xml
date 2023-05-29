@@ -7,6 +7,7 @@
             <y>0</y>
         </position>
         <bitstring></bitstring>
+        <spikes>0</spikes>
         <isOutput>true</isOutput>
     </out>
 </content>
