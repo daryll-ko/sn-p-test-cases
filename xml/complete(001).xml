@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+    <n_0>
+        <id>n_0</id>
+        <position>
+            <x>0</x>
+            <y>0</y>
+        </position>
+        <rules>a*/a-&gt;a;0</rules>
+        <spikes>1</spikes>
+        <delay>0</delay>
+    </n_0>
+</content>

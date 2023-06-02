@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+    <n_0>
+        <id>n_0</id>
+        <position>
+            <x>0</x>
+            <y>0</y>
+        </position>
+        <rules>a*/a-&gt;a;0</rules>
+        <spikes>1</spikes>
+        <delay>0</delay>
+        <out>n_1</out>
+        <outWeights>
+            <n_1>1</n_1>
+        </outWeights>
+    </n_0>
+    <n_1>
+        <id>n_1</id>
+        <position>
+            <x>0</x>
+            <y>0</y>
+        </position>
+        <rules>a*/a-&gt;a;0</rules>
+        <spikes>1</spikes>
+        <delay>0</delay>
+        <out>n_0</out>
+        <outWeights>
+            <n_0>1</n_0>
+        </outWeights>
+    </n_1>
+</content>
