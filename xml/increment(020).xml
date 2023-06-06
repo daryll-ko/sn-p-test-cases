@@ -106,7 +106,7 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <rules>a(aa)+/3a-&gt;a;0 a/a-&gt;a;1</rules>
+        <rules>a(2a)+/3a-&gt;a;0 a/a-&gt;a;1</rules>
         <spikes>40</spikes>
         <delay>0</delay>
     </r>

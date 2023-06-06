@@ -51,7 +51,7 @@
 
 >> L_{i,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> L_{i,2}: Rule(regex='^a$', consumed=1, produced=1, delay=1)
->> r: Rule(regex='^a(aa)+$', consumed=3, produced=1, delay=0)
+>> r: Rule(regex='^a(a{2})+$', consumed=3, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 

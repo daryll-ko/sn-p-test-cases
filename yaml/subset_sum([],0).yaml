@@ -14,7 +14,7 @@ neurons:
     y: 0
   content: 0
   rules:
-  - a(aa)^{+}/a^{2}\to a;0
+  - a(a^{2})^{+}/a^{2}\to a;0
 - id: h_{1}
   type: regular
   position:
@@ -105,7 +105,7 @@ neurons:
     y: 0
   content: 0
   rules:
-  - a(aa)^{+}/a^{2}\to a;0
+  - a(a^{2})^{+}/a^{2}\to a;0
 synapses:
 - from: h_{1}
   to: h_{2}

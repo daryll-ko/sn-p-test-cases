@@ -231,10 +231,10 @@
 
 > phase 3: selecting rules
 
->> in_{1}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> in_{2}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> in_{3}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> in_{4}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{1}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
+>> in_{2}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
+>> in_{3}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
+>> in_{4}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> h_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
@@ -330,9 +330,9 @@
 
 > phase 3: selecting rules
 
->> in_{2}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> in_{3}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> in_{4}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{2}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
+>> in_{3}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
+>> in_{4}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> e_{1,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> e_{1,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> e_{2,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
@@ -437,8 +437,8 @@
 
 > phase 3: selecting rules
 
->> in_{3}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> in_{4}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{3}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
+>> in_{4}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> e_{2,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> e_{2,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> e_{3,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
@@ -540,8 +540,8 @@
 
 > phase 3: selecting rules
 
->> in_{3}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> in_{4}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{3}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
+>> in_{4}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> e_{3,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> e_{3,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> e_{4,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
@@ -641,7 +641,7 @@
 
 > phase 3: selecting rules
 
->> in_{4}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{4}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> e_{3,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> e_{3,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> e_{4,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
@@ -739,7 +739,7 @@
 
 > phase 3: selecting rules
 
->> in_{4}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{4}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> e_{4,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> e_{4,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
@@ -835,7 +835,7 @@
 
 > phase 3: selecting rules
 
->> in_{4}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{4}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> e_{4,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> e_{4,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
@@ -931,7 +931,7 @@
 
 > phase 3: selecting rules
 
->> in_{4}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{4}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> e_{4,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> e_{4,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
@@ -1476,8 +1476,8 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -1563,9 +1563,9 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -1651,9 +1651,9 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -1739,9 +1739,9 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -1827,9 +1827,9 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -1915,9 +1915,9 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -2003,9 +2003,9 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -2091,9 +2091,9 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -2179,9 +2179,9 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -2267,9 +2267,9 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -2355,9 +2355,9 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -2443,9 +2443,9 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -2531,9 +2531,9 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -2619,9 +2619,9 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -2707,9 +2707,9 @@
 
 > phase 3: selecting rules
 
->> in_{5}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{5}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> acc: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 

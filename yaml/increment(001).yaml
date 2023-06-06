@@ -66,7 +66,7 @@ neurons:
     y: 0
   content: 2
   rules:
-  - a(aa)^{+}/a^{3}\to a;0
+  - a(a^{2})^{+}/a^{3}\to a;0
   - a\to a;1
 synapses:
 - from: L_{i}

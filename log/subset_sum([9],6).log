@@ -28,7 +28,7 @@
 > phase 3: selecting rules
 
 >> c_{0}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> c_{1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> c_{1}: Rule(regex='^a$', consumed=1, produced=1, delay=1)
 >> h_{1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
@@ -60,14 +60,14 @@
 
 > phase 1: incoming spikes
 
->> d_{1}: 2
+>> d_{1}: 1
 >> h_{2}: 1
 
 > phase 2: showing starting state
 
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
->> d_{1}: <2/0>
+>> d_{1}: <1/0>
 >> in_{1}: <18/0>
 >> in_{2}: <12/0>
 >> e_{1,1}: <0/0>
@@ -86,7 +86,7 @@
 
 > phase 3: selecting rules
 
->> d_{1}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> d_{1}: Rule(regex='^a$', consumed=1, produced=0, delay=0)
 >> h_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
@@ -118,15 +118,15 @@
 
 > phase 1: incoming spikes
 
->> in_{1}: 1
+>> d_{1}: 1
 >> h_{3}: 1
 
 > phase 2: showing starting state
 
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <19/0>
+>> d_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <12/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -144,7 +144,7 @@
 
 > phase 3: selecting rules
 
->> in_{1}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> d_{1}: Rule(regex='^a$', consumed=1, produced=0, delay=0)
 >> h_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
@@ -156,7 +156,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <17/0>
+>> in_{1}: <18/0>
 >> in_{2}: <12/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -176,8 +176,6 @@
 
 > phase 1: incoming spikes
 
->> e_{1,1}: 1
->> e_{1,2}: 1
 >> h_{4}: 1
 >> h_{5}: 1
 
@@ -186,10 +184,10 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <17/0>
+>> in_{1}: <18/0>
 >> in_{2}: <12/0>
->> e_{1,1}: <1/0>
->> e_{1,2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
 >> h_{1}: <0/0>
 >> h_{2}: <0/0>
 >> h_{3}: <0/0>
@@ -204,9 +202,6 @@
 
 > phase 3: selecting rules
 
->> in_{1}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> e_{1,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> e_{1,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> h_{5}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 
@@ -219,7 +214,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <15/0>
+>> in_{1}: <18/0>
 >> in_{2}: <12/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -239,594 +234,6 @@
 
 > phase 1: incoming spikes
 
->> e_{1,1}: 1
->> e_{1,2}: 1
->> h_{4}: 1
->> h_{5}: 1
->> t_{1}: 3
->> acc: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <15/0>
->> in_{2}: <12/0>
->> e_{1,1}: <1/0>
->> e_{1,2}: <1/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <1/0>
->> h_{5}: <1/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <3/0>
->> t_{2}: <0/0>
->> acc: <2/0>
-
-> phase 3: selecting rules
-
->> in_{1}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> e_{1,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> e_{1,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{5}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> t_{1}: Rule(regex='^a{3}$', consumed=3, produced=0, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <13/0>
->> in_{2}: <12/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <0/0>
->> h_{5}: <0/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <2/0>
-
-- - - - - - - - - - - - - - - time: 5 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
->> e_{1,1}: 1
->> e_{1,2}: 1
->> h_{4}: 1
->> h_{5}: 1
->> t_{1}: 3
->> acc: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <13/0>
->> in_{2}: <12/0>
->> e_{1,1}: <1/0>
->> e_{1,2}: <1/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <1/0>
->> h_{5}: <1/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <3/0>
->> t_{2}: <0/0>
->> acc: <4/0>
-
-> phase 3: selecting rules
-
->> in_{1}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> e_{1,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> e_{1,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{5}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> t_{1}: Rule(regex='^a{3}$', consumed=3, produced=0, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <11/0>
->> in_{2}: <12/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <0/0>
->> h_{5}: <0/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <4/0>
-
-- - - - - - - - - - - - - - - time: 6 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
->> e_{1,1}: 1
->> e_{1,2}: 1
->> h_{4}: 1
->> h_{5}: 1
->> t_{1}: 3
->> acc: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <11/0>
->> in_{2}: <12/0>
->> e_{1,1}: <1/0>
->> e_{1,2}: <1/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <1/0>
->> h_{5}: <1/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <3/0>
->> t_{2}: <0/0>
->> acc: <6/0>
-
-> phase 3: selecting rules
-
->> in_{1}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> e_{1,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> e_{1,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{5}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> t_{1}: Rule(regex='^a{3}$', consumed=3, produced=0, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <9/0>
->> in_{2}: <12/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <0/0>
->> h_{5}: <0/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <6/0>
-
-- - - - - - - - - - - - - - - time: 7 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
->> e_{1,1}: 1
->> e_{1,2}: 1
->> h_{4}: 1
->> h_{5}: 1
->> t_{1}: 3
->> acc: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <9/0>
->> in_{2}: <12/0>
->> e_{1,1}: <1/0>
->> e_{1,2}: <1/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <1/0>
->> h_{5}: <1/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <3/0>
->> t_{2}: <0/0>
->> acc: <8/0>
-
-> phase 3: selecting rules
-
->> in_{1}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> e_{1,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> e_{1,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{5}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> t_{1}: Rule(regex='^a{3}$', consumed=3, produced=0, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <7/0>
->> in_{2}: <12/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <0/0>
->> h_{5}: <0/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <8/0>
-
-- - - - - - - - - - - - - - - time: 8 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
->> e_{1,1}: 1
->> e_{1,2}: 1
->> h_{4}: 1
->> h_{5}: 1
->> t_{1}: 3
->> acc: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <7/0>
->> in_{2}: <12/0>
->> e_{1,1}: <1/0>
->> e_{1,2}: <1/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <1/0>
->> h_{5}: <1/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <3/0>
->> t_{2}: <0/0>
->> acc: <10/0>
-
-> phase 3: selecting rules
-
->> in_{1}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> e_{1,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> e_{1,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{5}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> t_{1}: Rule(regex='^a{3}$', consumed=3, produced=0, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <5/0>
->> in_{2}: <12/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <0/0>
->> h_{5}: <0/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <10/0>
-
-- - - - - - - - - - - - - - - time: 9 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
->> e_{1,1}: 1
->> e_{1,2}: 1
->> h_{4}: 1
->> h_{5}: 1
->> t_{1}: 3
->> acc: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <5/0>
->> in_{2}: <12/0>
->> e_{1,1}: <1/0>
->> e_{1,2}: <1/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <1/0>
->> h_{5}: <1/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <3/0>
->> t_{2}: <0/0>
->> acc: <12/0>
-
-> phase 3: selecting rules
-
->> in_{1}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> e_{1,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> e_{1,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{5}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> t_{1}: Rule(regex='^a{3}$', consumed=3, produced=0, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <3/0>
->> in_{2}: <12/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <0/0>
->> h_{5}: <0/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <12/0>
-
-- - - - - - - - - - - - - - - time: 10 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
->> e_{1,1}: 1
->> e_{1,2}: 1
->> h_{4}: 1
->> h_{5}: 1
->> t_{1}: 3
->> acc: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <3/0>
->> in_{2}: <12/0>
->> e_{1,1}: <1/0>
->> e_{1,2}: <1/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <1/0>
->> h_{5}: <1/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <3/0>
->> t_{2}: <0/0>
->> acc: <14/0>
-
-> phase 3: selecting rules
-
->> in_{1}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> e_{1,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> e_{1,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{5}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> t_{1}: Rule(regex='^a{3}$', consumed=3, produced=0, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <12/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <0/0>
->> h_{5}: <0/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <14/0>
-
-- - - - - - - - - - - - - - - time: 11 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
->> e_{1,1}: 1
->> e_{1,2}: 1
->> h_{4}: 1
->> h_{5}: 1
->> t_{1}: 3
->> acc: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <12/0>
->> e_{1,1}: <1/0>
->> e_{1,2}: <1/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <1/0>
->> h_{5}: <1/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <3/0>
->> t_{2}: <0/0>
->> acc: <16/0>
-
-> phase 3: selecting rules
-
->> e_{1,1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> e_{1,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{5}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> t_{1}: Rule(regex='^a{3}$', consumed=3, produced=0, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <12/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <0/0>
->> h_{5}: <0/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <16/0>
-
-- - - - - - - - - - - - - - - time: 12 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
->> h_{4}: 1
->> h_{5}: 1
->> t_{1}: 3
->> acc: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <12/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <1/0>
->> h_{5}: <1/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <3/0>
->> t_{2}: <0/0>
->> acc: <18/0>
-
-> phase 3: selecting rules
-
->> h_{4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> h_{5}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> t_{1}: Rule(regex='^a{3}$', consumed=3, produced=0, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <12/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <0/0>
->> h_{5}: <0/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <18/0>
-
-- - - - - - - - - - - - - - - time: 13 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
 >> h_{4}: 1
 >> h_{5}: 1
 >> t_{1}: 1
@@ -836,7 +243,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <12/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -850,7 +257,7 @@
 >> g_{3}: <0/0>
 >> t_{1}: <1/0>
 >> t_{2}: <0/0>
->> acc: <18/0>
+>> acc: <0/0>
 
 > phase 3: selecting rules
 
@@ -867,7 +274,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <12/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -881,9 +288,9 @@
 >> g_{3}: <0/0>
 >> t_{1}: <0/0>
 >> t_{2}: <0/0>
->> acc: <18/0>
+>> acc: <0/0>
 
-- - - - - - - - - - - - - - - time: 14 - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - time: 5 - - - - - - - - - - - - - - - 
 
 > phase 1: incoming spikes
 
@@ -897,7 +304,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <12/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -911,7 +318,7 @@
 >> g_{3}: <0/0>
 >> t_{1}: <1/0>
 >> t_{2}: <1/0>
->> acc: <18/0>
+>> acc: <0/0>
 
 > phase 3: selecting rules
 
@@ -926,7 +333,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <12/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -940,9 +347,9 @@
 >> g_{3}: <0/0>
 >> t_{1}: <0/0>
 >> t_{2}: <1/0>
->> acc: <18/0>
+>> acc: <0/0>
 
-- - - - - - - - - - - - - - - time: 15 - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - time: 6 - - - - - - - - - - - - - - - 
 
 > phase 1: incoming spikes
 
@@ -955,7 +362,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <12/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -969,7 +376,7 @@
 >> g_{3}: <0/0>
 >> t_{1}: <0/0>
 >> t_{2}: <2/0>
->> acc: <18/0>
+>> acc: <0/0>
 
 > phase 3: selecting rules
 
@@ -984,7 +391,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <12/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -998,9 +405,9 @@
 >> g_{3}: <0/0>
 >> t_{1}: <0/0>
 >> t_{2}: <0/0>
->> acc: <18/0>
+>> acc: <0/0>
 
-- - - - - - - - - - - - - - - time: 16 - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - time: 7 - - - - - - - - - - - - - - - 
 
 > phase 1: incoming spikes
 
@@ -1012,7 +419,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <13/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1026,12 +433,11 @@
 >> g_{3}: <0/0>
 >> t_{1}: <0/0>
 >> t_{2}: <0/0>
->> acc: <19/0>
+>> acc: <1/0>
 
 > phase 3: selecting rules
 
->> in_{2}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
+>> in_{2}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -1042,7 +448,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <11/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1056,356 +462,9 @@
 >> g_{3}: <0/0>
 >> t_{1}: <0/0>
 >> t_{2}: <0/0>
->> acc: <17/0>
+>> acc: <1/0>
 
-- - - - - - - - - - - - - - - time: 17 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
->> g_{1}: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <11/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <3/0>
->> h_{5}: <3/0>
->> g_{1}: <2/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <17/0>
-
-> phase 3: selecting rules
-
->> in_{2}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <9/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <3/0>
->> h_{5}: <3/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <15/0>
-
-- - - - - - - - - - - - - - - time: 18 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
->> g_{1}: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <9/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <3/0>
->> h_{5}: <3/0>
->> g_{1}: <2/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <15/0>
-
-> phase 3: selecting rules
-
->> in_{2}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <7/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <3/0>
->> h_{5}: <3/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <13/0>
-
-- - - - - - - - - - - - - - - time: 19 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
->> g_{1}: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <7/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <3/0>
->> h_{5}: <3/0>
->> g_{1}: <2/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <13/0>
-
-> phase 3: selecting rules
-
->> in_{2}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <5/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <3/0>
->> h_{5}: <3/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <11/0>
-
-- - - - - - - - - - - - - - - time: 20 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
->> g_{1}: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <5/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <3/0>
->> h_{5}: <3/0>
->> g_{1}: <2/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <11/0>
-
-> phase 3: selecting rules
-
->> in_{2}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <3/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <3/0>
->> h_{5}: <3/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <9/0>
-
-- - - - - - - - - - - - - - - time: 21 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
->> g_{1}: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <3/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <3/0>
->> h_{5}: <3/0>
->> g_{1}: <2/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <9/0>
-
-> phase 3: selecting rules
-
->> in_{2}: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
->> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <1/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <3/0>
->> h_{5}: <3/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <7/0>
-
-- - - - - - - - - - - - - - - time: 22 - - - - - - - - - - - - - - - 
-
-> phase 1: incoming spikes
-
->> g_{1}: 2
-
-> phase 2: showing starting state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <1/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <3/0>
->> h_{5}: <3/0>
->> g_{1}: <2/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <7/0>
-
-> phase 3: selecting rules
-
->> g_{1}: Rule(regex='^a{2}$', consumed=2, produced=0, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
-
-> phase 4: accumulating updates, detecting outputs
-
->> no events during phase 4
-
-> phase 5: showing in-between state
-
->> c_{0}: <0/0>
->> c_{1}: <0/0>
->> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <1/0>
->> e_{1,1}: <0/0>
->> e_{1,2}: <0/0>
->> h_{1}: <0/0>
->> h_{2}: <0/0>
->> h_{3}: <0/0>
->> h_{4}: <3/0>
->> h_{5}: <3/0>
->> g_{1}: <0/0>
->> g_{2}: <0/0>
->> g_{3}: <0/0>
->> t_{1}: <0/0>
->> t_{2}: <0/0>
->> acc: <5/0>
-
-- - - - - - - - - - - - - - - time: 23 - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - time: 8 - - - - - - - - - - - - - - - 
 
 > phase 1: incoming spikes
 
@@ -1416,8 +475,8 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <1/0>
+>> in_{1}: <18/0>
+>> in_{2}: <11/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
 >> h_{1}: <0/0>
@@ -1430,12 +489,12 @@
 >> g_{3}: <0/0>
 >> t_{1}: <0/0>
 >> t_{2}: <0/0>
->> acc: <5/0>
+>> acc: <1/0>
 
 > phase 3: selecting rules
 
+>> in_{2}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -1446,8 +505,8 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <1/0>
+>> in_{1}: <18/0>
+>> in_{2}: <9/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
 >> h_{1}: <0/0>
@@ -1460,9 +519,9 @@
 >> g_{3}: <0/0>
 >> t_{1}: <0/0>
 >> t_{2}: <0/0>
->> acc: <3/0>
+>> acc: <1/0>
 
-- - - - - - - - - - - - - - - time: 24 - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - time: 9 - - - - - - - - - - - - - - - 
 
 > phase 1: incoming spikes
 
@@ -1475,8 +534,8 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
->> in_{2}: <1/0>
+>> in_{1}: <18/0>
+>> in_{2}: <9/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
 >> h_{1}: <0/0>
@@ -1489,14 +548,14 @@
 >> g_{3}: <1/0>
 >> t_{1}: <0/0>
 >> t_{2}: <0/0>
->> acc: <3/0>
+>> acc: <1/0>
 
 > phase 3: selecting rules
 
+>> in_{2}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
 >> g_{1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> g_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> g_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> acc: Rule(regex='^a(aa)+$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -1507,7 +566,888 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
+>> in_{2}: <7/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 10 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{1}: 1
+>> g_{2}: 2
+>> g_{3}: 2
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <7/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <1/0>
+>> g_{2}: <2/0>
+>> g_{3}: <2/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> in_{2}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
+>> g_{1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{2}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <5/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 11 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{1}: 1
+>> g_{2}: 2
+>> g_{3}: 2
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <5/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <1/0>
+>> g_{2}: <2/0>
+>> g_{3}: <2/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> in_{2}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
+>> g_{1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{2}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <3/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 12 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{1}: 1
+>> g_{2}: 2
+>> g_{3}: 2
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <3/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <1/0>
+>> g_{2}: <2/0>
+>> g_{3}: <2/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> in_{2}: Rule(regex='^a(a{2})+$', consumed=2, produced=1, delay=0)
+>> g_{1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{2}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 13 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{1}: 1
+>> g_{2}: 2
+>> g_{3}: 2
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <1/0>
+>> g_{2}: <2/0>
+>> g_{3}: <2/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> g_{1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{2}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 14 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{2}: 2
+>> g_{3}: 2
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <2/0>
+>> g_{3}: <2/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> g_{2}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 15 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{2}: 1
+>> g_{3}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <1/0>
+>> g_{3}: <1/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> g_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 16 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{2}: 1
+>> g_{3}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <1/0>
+>> g_{3}: <1/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> g_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 17 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{2}: 1
+>> g_{3}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <1/0>
+>> g_{3}: <1/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> g_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 18 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{2}: 1
+>> g_{3}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <1/0>
+>> g_{3}: <1/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> g_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 19 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{2}: 1
+>> g_{3}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <1/0>
+>> g_{3}: <1/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> g_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 20 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{2}: 1
+>> g_{3}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <1/0>
+>> g_{3}: <1/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> g_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 21 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{2}: 1
+>> g_{3}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <1/0>
+>> g_{3}: <1/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> g_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 22 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{2}: 1
+>> g_{3}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <1/0>
+>> g_{3}: <1/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> g_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 23 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{2}: 1
+>> g_{3}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <1/0>
+>> g_{3}: <1/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> g_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <0/0>
+>> g_{3}: <0/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+- - - - - - - - - - - - - - - time: 24 - - - - - - - - - - - - - - - 
+
+> phase 1: incoming spikes
+
+>> g_{2}: 1
+>> g_{3}: 1
+
+> phase 2: showing starting state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
+>> in_{2}: <1/0>
+>> e_{1,1}: <0/0>
+>> e_{1,2}: <0/0>
+>> h_{1}: <0/0>
+>> h_{2}: <0/0>
+>> h_{3}: <0/0>
+>> h_{4}: <3/0>
+>> h_{5}: <3/0>
+>> g_{1}: <0/0>
+>> g_{2}: <1/0>
+>> g_{3}: <1/0>
+>> t_{1}: <0/0>
+>> t_{2}: <0/0>
+>> acc: <1/0>
+
+> phase 3: selecting rules
+
+>> g_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+
+> phase 4: accumulating updates, detecting outputs
+
+>> no events during phase 4
+
+> phase 5: showing in-between state
+
+>> c_{0}: <0/0>
+>> c_{1}: <0/0>
+>> d_{1}: <0/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1527,16 +1467,15 @@
 
 > phase 1: incoming spikes
 
->> g_{1}: 1
->> g_{2}: 2
->> g_{3}: 2
+>> g_{2}: 1
+>> g_{3}: 1
 
 > phase 2: showing starting state
 
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1545,18 +1484,17 @@
 >> h_{3}: <0/0>
 >> h_{4}: <3/0>
 >> h_{5}: <3/0>
->> g_{1}: <1/0>
->> g_{2}: <2/0>
->> g_{3}: <2/0>
+>> g_{1}: <0/0>
+>> g_{2}: <1/0>
+>> g_{3}: <1/0>
 >> t_{1}: <0/0>
 >> t_{2}: <0/0>
 >> acc: <1/0>
 
 > phase 3: selecting rules
 
->> g_{1}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
->> g_{2}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
->> g_{3}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> g_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -1567,7 +1505,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1587,15 +1525,15 @@
 
 > phase 1: incoming spikes
 
->> g_{2}: 2
->> g_{3}: 2
+>> g_{2}: 1
+>> g_{3}: 1
 
 > phase 2: showing starting state
 
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1605,16 +1543,16 @@
 >> h_{4}: <3/0>
 >> h_{5}: <3/0>
 >> g_{1}: <0/0>
->> g_{2}: <2/0>
->> g_{3}: <2/0>
+>> g_{2}: <1/0>
+>> g_{3}: <1/0>
 >> t_{1}: <0/0>
 >> t_{2}: <0/0>
 >> acc: <1/0>
 
 > phase 3: selecting rules
 
->> g_{2}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
->> g_{3}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
+>> g_{2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
+>> g_{3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -1625,7 +1563,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1653,7 +1591,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1683,7 +1621,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1711,7 +1649,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1741,7 +1679,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1769,7 +1707,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1799,7 +1737,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1827,7 +1765,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1857,7 +1795,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1885,7 +1823,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1915,7 +1853,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1943,7 +1881,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -1973,7 +1911,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2001,7 +1939,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2031,7 +1969,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2059,7 +1997,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2089,7 +2027,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2117,7 +2055,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2147,7 +2085,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2175,7 +2113,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2205,7 +2143,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2233,7 +2171,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2263,7 +2201,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2291,7 +2229,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2321,7 +2259,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2349,7 +2287,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2379,7 +2317,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2407,7 +2345,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2437,7 +2375,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2465,7 +2403,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2495,7 +2433,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2523,7 +2461,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2553,7 +2491,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2581,7 +2519,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2611,7 +2549,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2639,7 +2577,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2669,7 +2607,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2697,7 +2635,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2727,7 +2665,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2755,7 +2693,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2785,7 +2723,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2813,7 +2751,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2843,7 +2781,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2871,7 +2809,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2901,7 +2839,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2929,7 +2867,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2959,7 +2897,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -2987,7 +2925,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3017,7 +2955,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3045,7 +2983,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3075,7 +3013,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3103,7 +3041,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3133,7 +3071,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3161,7 +3099,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3191,7 +3129,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3219,7 +3157,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3249,7 +3187,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3277,7 +3215,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3307,7 +3245,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3335,7 +3273,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3365,7 +3303,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3393,7 +3331,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3423,7 +3361,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3451,7 +3389,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3481,7 +3419,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3509,7 +3447,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3539,7 +3477,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3567,7 +3505,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3597,7 +3535,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3625,7 +3563,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3655,7 +3593,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3683,7 +3621,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3713,7 +3651,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3741,7 +3679,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3771,7 +3709,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3799,7 +3737,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3829,7 +3767,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3857,7 +3795,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3887,7 +3825,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3915,7 +3853,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3945,7 +3883,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -3973,7 +3911,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4003,7 +3941,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4031,7 +3969,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4061,7 +3999,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4089,7 +4027,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4119,7 +4057,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4147,7 +4085,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4177,7 +4115,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4205,7 +4143,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4235,7 +4173,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4263,7 +4201,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4293,7 +4231,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4321,7 +4259,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4351,7 +4289,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4379,7 +4317,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4409,7 +4347,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4437,7 +4375,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4467,7 +4405,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4495,7 +4433,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4525,7 +4463,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4553,7 +4491,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4583,7 +4521,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4611,7 +4549,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4641,7 +4579,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4669,7 +4607,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4699,7 +4637,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4727,7 +4665,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4757,7 +4695,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4785,7 +4723,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4815,7 +4753,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4843,7 +4781,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4873,7 +4811,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4901,7 +4839,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4931,7 +4869,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4959,7 +4897,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -4989,7 +4927,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5017,7 +4955,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5047,7 +4985,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5075,7 +5013,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5105,7 +5043,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5133,7 +5071,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5163,7 +5101,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5191,7 +5129,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5221,7 +5159,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5249,7 +5187,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5279,7 +5217,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5307,7 +5245,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5337,7 +5275,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5365,7 +5303,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5395,7 +5333,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5423,7 +5361,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5453,7 +5391,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5481,7 +5419,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5511,7 +5449,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5539,7 +5477,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5569,7 +5507,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5597,7 +5535,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5627,7 +5565,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5655,7 +5593,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5685,7 +5623,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5713,7 +5651,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5743,7 +5681,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5771,7 +5709,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5801,7 +5739,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5829,7 +5767,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>
@@ -5859,7 +5797,7 @@
 >> c_{0}: <0/0>
 >> c_{1}: <0/0>
 >> d_{1}: <0/0>
->> in_{1}: <1/0>
+>> in_{1}: <18/0>
 >> in_{2}: <1/0>
 >> e_{1,1}: <0/0>
 >> e_{1,2}: <0/0>

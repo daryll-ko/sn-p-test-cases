@@ -32,7 +32,7 @@ neurons:
     y: 0
   content: 10
   rules:
-  - a(aa)^{+}/a^{2}\to a;0
+  - a(a^{2})^{+}/a^{2}\to a;0
 - id: in_{2}
   type: regular
   position:
@@ -40,7 +40,7 @@ neurons:
     y: 0
   content: 10
   rules:
-  - a(aa)^{+}/a^{2}\to a;0
+  - a(a^{2})^{+}/a^{2}\to a;0
 - id: e_{1,1}
   type: regular
   position:
@@ -148,7 +148,7 @@ neurons:
     y: 0
   content: 0
   rules:
-  - a(aa)^{+}/a^{2}\to a;0
+  - a(a^{2})^{+}/a^{2}\to a;0
 synapses:
 - from: c_{1}
   to: d_{1}

@@ -48,7 +48,7 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <rules>a(aa)+/2a-&gt;a;0</rules>
+        <rules>a(2a)+/2a-&gt;a;0</rules>
         <spikes>10</spikes>
         <delay>0</delay>
         <out>e_11</out>
@@ -64,7 +64,7 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <rules>a(aa)+/2a-&gt;a;0</rules>
+        <rules>a(2a)+/2a-&gt;a;0</rules>
         <spikes>10</spikes>
         <delay>0</delay>
         <out>g_1</out>
@@ -262,7 +262,7 @@
             <x>0</x>
             <y>0</y>
         </position>
-        <rules>a(aa)+/2a-&gt;a;0</rules>
+        <rules>a(2a)+/2a-&gt;a;0</rules>
         <spikes>0</spikes>
         <delay>0</delay>
         <out>g_1</out>

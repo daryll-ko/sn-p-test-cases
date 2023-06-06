@@ -57,7 +57,7 @@
 > phase 3: selecting rules
 
 >> L_{i,1}: Rule(regex='^a$', consumed=1, produced=1, delay=1)
->> L_{i,2}: Rule(regex='^a$', consumed=1, produced=1, delay=1)
+>> L_{i,2}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> L_{i,3}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 >> L_{i,4}: Rule(regex='^a$', consumed=1, produced=1, delay=0)
 
@@ -80,7 +80,8 @@
 
 > phase 1: incoming spikes
 
->> L_{k}: 1
+>> L_{j}: 1
+>> L_{k}: 2
 >> r: 2
 
 > phase 2: showing starting state
@@ -90,13 +91,14 @@
 >> L_{i,2}: <0/0>
 >> L_{i,3}: <0/0>
 >> L_{i,4}: <0/0>
->> L_{j}: <0/0>
->> L_{k}: <1/0>
+>> L_{j}: <1/0>
+>> L_{k}: <2/0>
 >> r: <398/0>
 
 > phase 3: selecting rules
 
->> L_{k}: Rule(regex='^a$', consumed=1, produced=0, delay=0)
+>> L_{j}: Rule(regex='^a$', consumed=1, produced=0, delay=0)
+>> L_{k}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
@@ -117,8 +119,7 @@
 
 > phase 1: incoming spikes
 
->> L_{j}: 2
->> L_{k}: 1
+>> L_{j}: 1
 
 > phase 2: showing starting state
 
@@ -127,14 +128,13 @@
 >> L_{i,2}: <0/0>
 >> L_{i,3}: <0/0>
 >> L_{i,4}: <0/0>
->> L_{j}: <2/0>
->> L_{k}: <1/0>
+>> L_{j}: <1/0>
+>> L_{k}: <0/0>
 >> r: <398/0>
 
 > phase 3: selecting rules
 
->> L_{j}: Rule(regex='^a{2}$', consumed=2, produced=1, delay=0)
->> L_{k}: Rule(regex='^a$', consumed=1, produced=0, delay=0)
+>> L_{j}: Rule(regex='^a$', consumed=1, produced=0, delay=0)
 
 > phase 4: accumulating updates, detecting outputs
 
